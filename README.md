@@ -14,4 +14,13 @@ Push:
   1. tracking log file and mail if any error appears.
   2. analyzing number of disscussion by ptt and mail
   
+  
+--------------------------------------
+Result:
+discussion trend
+![image](https://github.com/sjenwork/NewsWork/blob/master/Image/Discussion_trend.png)
+
+
+
+
  
