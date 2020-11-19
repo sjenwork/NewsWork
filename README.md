@@ -22,7 +22,7 @@ Objective
 Result:
 ====
 
-#### discussion trend.
+#### Discussion trend.
  
   ![image](https://github.com/sjenwork/NewsWork/blob/master/Image/Discussion_trend.png)
 
