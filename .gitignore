@@ -1,0 +1,11 @@
+conf.ini
+*.bin
+*.log
+*.err
+.*
+!.*/
+!.gitignore
+__pycache__
+*.xlsx
+*.xls
+*.csv
