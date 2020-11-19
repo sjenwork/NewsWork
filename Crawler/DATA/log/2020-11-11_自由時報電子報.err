@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "/Users/jen/miniconda3/envs/work/lib/python3.7/site-packages/pandas/core/arrays/datetimes.py", line 2054, in objects_to_datetime64ns
+    values, tz_parsed = conversion.datetime_to_datetime64(data)
+  File "pandas/_libs/tslibs/conversion.pyx", line 350, in pandas._libs.tslibs.conversion.datetime_to_datetime64
+TypeError: Unrecognized value type: <class 'str'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "getNews.py", line 974, in <module>
+    L = run[newsName](whichday, num=None)
+  File "getNews.py", line 414, in __init__
+    self._getKeywordNews()
+  File "getNews.py", line 434, in _getKeywordNews
+    nextPage = self._getKeywordNews_sub(keyword)
+  File "getNews.py", line 462, in _getKeywordNews_sub
+    newsTime = pd.to_datetime(Time) 
+  File "/Users/jen/miniconda3/envs/work/lib/python3.7/site-packages/pandas/core/tools/datetimes.py", line 830, in to_datetime
+    result = convert_listlike(np.array([arg]), format)[0]
+  File "/Users/jen/miniconda3/envs/work/lib/python3.7/site-packages/pandas/core/tools/datetimes.py", line 466, in _convert_listlike_datetimes
+    allow_object=True,
+  File "/Users/jen/miniconda3/envs/work/lib/python3.7/site-packages/pandas/core/arrays/datetimes.py", line 2059, in objects_to_datetime64ns
+    raise e
+  File "/Users/jen/miniconda3/envs/work/lib/python3.7/site-packages/pandas/core/arrays/datetimes.py", line 2050, in objects_to_datetime64ns
+    require_iso8601=require_iso8601,
+  File "pandas/_libs/tslib.pyx", line 352, in pandas._libs.tslib.array_to_datetime
+  File "pandas/_libs/tslib.pyx", line 579, in pandas._libs.tslib.array_to_datetime
+  File "pandas/_libs/tslib.pyx", line 714, in pandas._libs.tslib.array_to_datetime_object
+  File "pandas/_libs/tslib.pyx", line 705, in pandas._libs.tslib.array_to_datetime_object
+  File "pandas/_libs/tslibs/parsing.pyx", line 243, in pandas._libs.tslibs.parsing.parse_datetime_string
+  File "/Users/jen/miniconda3/envs/work/lib/python3.7/site-packages/dateutil/parser/_parser.py", line 1374, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/Users/jen/miniconda3/envs/work/lib/python3.7/site-packages/dateutil/parser/_parser.py", line 649, in parse
+    raise ParserError("Unknown string format: %s", timestr)
+dateutil.parser._parser.ParserError: Unknown string format: 15小時前

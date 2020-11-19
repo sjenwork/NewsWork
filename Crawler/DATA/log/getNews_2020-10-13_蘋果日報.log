@@ -1,0 +1,225 @@
+     -----> 新聞爬蟲：蘋果日報
+
+           <<< 蘋果日報新聞搜尋 >>>
+  ------------------------------------------------------
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"工業用"; 網址:"https://tw.appledaily.com/search/工業用/"
+         >>> 找到關鍵字 "工業用"; 文章資訊: 2020-10-12 14:26:00, 精密機械需求旺盛鈞興9月業績持續高升, https://tw.appledaily.com/property/20201012/NWI6QGRRTVCZPE4CB4XDE3QF2Q/
+         <<< 2020-10-13 沒有更多 "工業用" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"化工"; 網址:"https://tw.appledaily.com/search/化工/"
+         <<< 2020-10-13 沒有更多 "化工" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"化災"; 網址:"https://tw.appledaily.com/search/化災/"
+         <<< 2020-10-13 沒有更多 "化災" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"化學"; 網址:"https://tw.appledaily.com/search/化學/"
+         <<< 2020-10-13 沒有更多 "化學" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"外洩"; 網址:"https://tw.appledaily.com/search/外洩/"
+      **** something wrong!! Restart it!! ****
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"危害"; 網址:"https://tw.appledaily.com/search/危害/"
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-13 06:00:00, 百姓的苦與痛2水域活動限制多觀光局安全為主要考量, https://tw.appledaily.com/local/20201013/EZFAXSSYDFG65AHPAQ5KG3BBU4/
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-13 00:00:00, 大樓藏31共享廚房上百爐火成隱憂, https://tw.appledaily.com/headline/20201013/6VOUPUQJVNDYNNRE5DHPEZS76Y/
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-13 02:50:00, 習近平抵潮州被大媽當神拜網友抱怨擾民即被警截圖鎖定, https://tw.appledaily.com/international/20201013/BG77FW6QKZGBVNPGO722N6VHE4/
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-13 00:43:00, 央視控前助理鄭宇欽是台諜卓榮泰無此助理, https://tw.appledaily.com/international/20201012/Z4TTJDEKORCBVBOZOCCOYATQEM/
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-13 00:12:00, 幕後央視用這兩招回應蔡英文國慶演說黨政高層分析用影片帶風向, https://tw.appledaily.com/politics/20201013/DTZB3X36EVEVBOWAMBRAQ3FCB4/
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-12 21:41:00, 扯大樓地下室藏31個廚房130個爐火全天運作議員轟北市府踢皮球, https://tw.appledaily.com/life/20201012/OJUMNAWKLZGFZPKDEWOZKXPS7A/
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-12 18:51:00, 一張表看它榮登慶記之都鄉民崩潰台中輸了怎麼可能, https://tw.appledaily.com/local/20201012/Z7UTHFX2TZEOTIA35F62SDYE4Q/
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-12 17:10:00, 秋季入山蜂螫案件數攀升台東鹿野4遊客移路障遭虎頭蜂螫送醫, https://tw.appledaily.com/local/20201012/LKMQUGYGFRD3BACTDVOQ62YA7M/
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-12 14:22:00, 央視稱破百起台諜案陳明通籲對岸停止政治炒作破壞兩岸關係, https://tw.appledaily.com/politics/20201012/KZLIOWBUSFDLRD6I3PT5SGXZ54/
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-12 12:43:00, 央視播李孟居被自白陳其邁中國做法愚蠢, https://tw.appledaily.com/politics/20201012/RSNN4EHR3FALVEB7C7QPMSAMC4/
+         <<< 2020-10-13 沒有更多 "危害" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"有毒"; 網址:"https://tw.appledaily.com/search/有毒/"
+         <<< 2020-10-13 沒有更多 "有毒" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"有害"; 網址:"https://tw.appledaily.com/search/有害/"
+         >>> 找到關鍵字 "有害"; 文章資訊: 2020-10-13 00:00:00, 癒後拼造勢川普我有免疫力了, https://tw.appledaily.com/headline/20201014/WFWPTLQ5EFDB3DNBFQEKH4WX2Q/
+         >>> 找到關鍵字 "有害"; 文章資訊: 2020-10-13 00:15:00, Longtail秋季海陸大餐報到升級版鴨肝餃融合台法風情, https://tw.appledaily.com/supplement/20201013/RZJAJDZSHBGDZMJCU5WBNQ6VMA/
+         >>> 找到關鍵字 "有害"; 文章資訊: 2020-10-12 07:03:00, 川普確診大讚抗體雞尾酒神藥稱很快可獲緊急使用授權, https://tw.appledaily.com/international/20201012/CHL3SEDYQZBLZC32TLTA6SNHPA/
+         <<< 2020-10-13 沒有更多 "有害" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"色料"; 網址:"https://tw.appledaily.com/search/色料/"
+      **** something wrong!! Restart it!! ****
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"色素"; 網址:"https://tw.appledaily.com/search/色素/"
+         <<< 2020-10-13 沒有更多 "色素" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"毒性"; 網址:"https://tw.appledaily.com/search/毒性/"
+         >>> 找到關鍵字 "毒性"; 文章資訊: 2020-10-13 06:22:00, 爭取嚴重藥物過敏患者一線生機林口長庚最新研究找到關鍵監測指標, https://tw.appledaily.com/life/20201013/C47S6QGC5VF3HJWTD3KSQ2V32I/
+         >>> 找到關鍵字 "毒性"; 文章資訊: 2020-10-13 05:00:00, 恐怖酸湯子30小時殺光母子4人毒性是砒霜20倍以上, https://tw.appledaily.com/international/20201013/N7M5WR46GBGCHIYFP2NASUET2Q/
+         >>> 找到關鍵字 "毒性"; 文章資訊: 2020-10-12 17:10:00, 秋季入山蜂螫案件數攀升台東鹿野4遊客移路障遭虎頭蜂螫送醫, https://tw.appledaily.com/local/20201012/LKMQUGYGFRD3BACTDVOQ62YA7M/
+         >>> 找到關鍵字 "毒性"; 文章資訊: 2020-10-12 15:48:00, 賴士葆轟小英將萊劑美豬政治化源頭管理根本是呼攏人民, https://tw.appledaily.com/life/20201012/URHMCHWL4BFXTEZFWRJWK6Q7CQ/
+         <<< 2020-10-13 沒有更多 "毒性" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"毒品"; 網址:"https://tw.appledaily.com/search/毒品/"
+         >>> 找到關鍵字 "毒品"; 文章資訊: 2020-10-12 20:57:00, 毒癮戒治靠合作醫師檢察官社工師交流經驗, https://tw.appledaily.com/local/20201012/QSXCQZFHZNBB7FOADFB3UXSDFI/
+         <<< 2020-10-13 沒有更多 "毒品" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"致癌"; 網址:"https://tw.appledaily.com/search/致癌/"
+         >>> 找到關鍵字 "致癌"; 文章資訊: 2020-10-12 15:48:00, 賴士葆轟小英將萊劑美豬政治化源頭管理根本是呼攏人民, https://tw.appledaily.com/life/20201012/URHMCHWL4BFXTEZFWRJWK6Q7CQ/
+         <<< 2020-10-13 沒有更多 "致癌" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"重金屬"; 網址:"https://tw.appledaily.com/search/重金屬/"
+         >>> 找到關鍵字 "重金屬"; 文章資訊: 2020-10-13 00:14:00, 西營盤菜攤搜羅各國特色菜能買到台灣水蓮和芋香冬瓜, https://tw.appledaily.com/supplement/20201013/IVKXU7GVWZEJVDSHLE5XRT4ZAQ/
+         <<< 2020-10-13 沒有更多 "重金屬" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"食安"; 網址:"https://tw.appledaily.com/search/食安/"
+      **** something wrong!! Restart it!! ****
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"香料"; 網址:"https://tw.appledaily.com/search/香料/"
+         >>> 找到關鍵字 "香料"; 文章資訊: 2020-10-13 00:15:00, 網推地表最好吃曲奇高雄快閃開賣甜點控也瘋狂, https://tw.appledaily.com/supplement/20201013/UEO5R5G6ABDL5D34Y3YBYZMAHE/
+         >>> 找到關鍵字 "香料"; 文章資訊: 2020-10-13 00:15:00, Longtail秋季海陸大餐報到升級版鴨肝餃融合台法風情, https://tw.appledaily.com/supplement/20201013/RZJAJDZSHBGDZMJCU5WBNQ6VMA/
+         <<< 2020-10-13 沒有更多 "香料" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"原料"; 網址:"https://tw.appledaily.com/search/原料/"
+         >>> 找到關鍵字 "原料"; 文章資訊: 2020-10-12 12:11:00, 投資客搶灘重劃區第三季千億推案集中這兩地, https://tw.appledaily.com/property/20201012/K6MKZIRCDJABDJZSO4H6YENJQA/
+         <<< 2020-10-13 沒有更多 "原料" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"氣爆"; 網址:"https://tw.appledaily.com/search/氣爆/"
+         <<< 2020-10-13 沒有更多 "氣爆" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"添加物"; 網址:"https://tw.appledaily.com/search/添加物/"
+         >>> 找到關鍵字 "添加物"; 文章資訊: 2020-10-12 13:30:00, 開放美豬牛民眾黨發起網路公民連署3大訴求把關護食安, https://tw.appledaily.com/politics/20201012/K2BIUSJFX5CXFAQI4OU5NFBM3Y/
+         <<< 2020-10-13 沒有更多 "添加物" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"黑心"; 網址:"https://tw.appledaily.com/search/黑心/"
+      **** something wrong!! Restart it!! ****
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"漂白"; 網址:"https://tw.appledaily.com/search/漂白/"
+         >>> 找到關鍵字 "漂白"; 文章資訊: 2020-10-12 21:36:00, 噁爆叫外送牛丼飯店家竟送來抹布蒸飯, https://tw.appledaily.com/local/20201012/YLQA4XA67ZFSNJERPBJOJBRDM4/
+         <<< 2020-10-13 沒有更多 "漂白" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"爆炸"; 網址:"https://tw.appledaily.com/search/爆炸/"
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-10-13 00:00:00, 不該被體制忽略的台灣女孩卓耕宇, https://tw.appledaily.com/forum/20201013/T2LH64ARIBGCLBCJNWWCEWDI5I/
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-10-12 17:16:00, 不該被體制忽略的台灣女孩卓耕宇, https://tw.appledaily.com/forum/20201012/K37QRIGMB5ATBHJYLRNH3WXQLE/
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-10-12 17:16:00, 我有炸彈正妹網紅潑汽油搶銀行5分鐘劫286萬元搭計程車落跑, https://tw.appledaily.com/international/20201012/NBLFPMFZ7RHJJFQC5VLARPN4CU/
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-10-12 14:57:00, 咖啡廳勸對方別抽反被吐菸Paul氣炸怒槓對方, https://tw.appledaily.com/entertainment/20201012/QJM4TBO3NNERTIPDGDRNOJ3QH4/
+         <<< 2020-10-13 沒有更多 "爆炸" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"新興"; 網址:"https://tw.appledaily.com/search/新興/"
+      **** something wrong!! Restart it!! ****
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"爆裂物"; 網址:"https://tw.appledaily.com/search/爆裂物/"
+         >>> 找到關鍵字 "爆裂物"; 文章資訊: 2020-10-12 20:02:00, 縱火犯落網搜出假炸彈檢警查出涉恐嚇取財, https://tw.appledaily.com/local/20201012/G43AMFNSW5BI5LKFX4CDKZPLKE/
+         >>> 找到關鍵字 "爆裂物"; 文章資訊: 2020-10-12 17:16:00, 我有炸彈正妹網紅潑汽油搶銀行5分鐘劫286萬元搭計程車落跑, https://tw.appledaily.com/international/20201012/NBLFPMFZ7RHJJFQC5VLARPN4CU/
+         <<< 2020-10-13 沒有更多 "爆裂物" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"IED"; 網址:"https://tw.appledaily.com/search/IED/"
+         <<< 2020-10-13 沒有更多 "IED" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"排放"; 網址:"https://tw.appledaily.com/search/排放/"
+         >>> 找到關鍵字 "排放"; 文章資訊: 2020-10-12 23:06:00, 諾貝爾革新拍賣理論美國師生檔兩學者摘下經濟學獎, https://tw.appledaily.com/international/20201012/VLUXESWXIJCHHHEJMQ7KA5AFBA/
+         <<< 2020-10-13 沒有更多 "排放" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"污染"; 網址:"https://tw.appledaily.com/search/污染/"
+         >>> 找到關鍵字 "污染"; 文章資訊: 2020-10-13 07:36:00, 恐怖酸湯子30小時殺光母子4人毒性是砒霜20倍以上, https://tw.appledaily.com/international/20201013/N7M5WR46GBGCHIYFP2NASUET2Q/
+         >>> 找到關鍵字 "污染"; 文章資訊: 2020-10-13 00:00:00, 桃園打造環保夜市, https://tw.appledaily.com/headline/20201013/HPKQNNGPCFBSJNVOUNFRNV2GSA/
+         >>> 找到關鍵字 "污染"; 文章資訊: 2020-10-13 00:14:00, 西營盤菜攤搜羅各國特色菜能買到台灣水蓮和芋香冬瓜, https://tw.appledaily.com/supplement/20201013/IVKXU7GVWZEJVDSHLE5XRT4ZAQ/
+         <<< 2020-10-13 沒有更多 "污染" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"廢水"; 網址:"https://tw.appledaily.com/search/廢水/"
+      **** something wrong!! Restart it!! ****
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"污水"; 網址:"https://tw.appledaily.com/search/污水/"
+         <<< 2020-10-13 沒有更多 "污水" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"洩漏"; 網址:"https://tw.appledaily.com/search/洩漏/"
+         >>> 找到關鍵字 "洩漏"; 文章資訊: 2020-10-13 00:44:00, VideoTalk陳其邁就任50天白眼女神變笑眼黃捷舉一點狂勝韓國瑜, https://tw.appledaily.com/politics/20201013/S44BWQSRCBB6LKYID4V2WSBFKQ/
+         >>> 找到關鍵字 "洩漏"; 文章資訊: 2020-10-12 18:50:00, VideoTalk陳其邁就任滿50天黃捷讚問政不再平行時空, https://tw.appledaily.com/politics/20201012/ICOEIFEH2NHW5N6D5FSDL7SR4Y/
+         <<< 2020-10-13 沒有更多 "洩漏" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"暗管"; 網址:"https://tw.appledaily.com/search/暗管/"
+      **** something wrong!! Restart it!! ****
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"偷排"; 網址:"https://tw.appledaily.com/search/偷排/"
+         <<< 2020-10-13 沒有更多 "偷排" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"安全"; 網址:"https://tw.appledaily.com/search/安全/"
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 07:54:00, 施耐德攜手宏于電機打造東亞首座電力服務中心, https://tw.appledaily.com/property/20201013/ZZ65BOZOFJGV5NV56PZTJUD55U/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 06:57:00, 百姓的苦與痛1海洋國家淪口號水上玩家力爭水域解嚴, https://tw.appledaily.com/local/20201013/N6C375MUEBHUZHD7YUPHDYDKKY/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 06:57:00, 百姓的苦與痛2水域活動限制多觀光局安全為主要考量, https://tw.appledaily.com/local/20201013/EZFAXSSYDFG65AHPAQ5KG3BBU4/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 06:57:00, 百姓的苦與痛3強制投保減少社會資源浪費專家籲下水前做好功課對自己負責, https://tw.appledaily.com/local/20201013/WPD4TPAWYRH5TPWNSW55XQCEKM/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 06:52:00, 央視又曝光台諜案美媒中共近年頻用間諜案實施外交報復, https://tw.appledaily.com/international/20201013/ZCGGLC2K25HVHJYNSBX5WF2FSA/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 05:18:00, 美副國務卿訪印稱中國是房間裡的大象, https://tw.appledaily.com/international/20201013/57A4RF5IW5DYNLYUNZM6HUCOSE/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 04:31:00, 曾挺捷克議長訪台斯洛伐克女總統再讓華為碰釘子, https://tw.appledaily.com/international/20201013/A3AOLCAN7BAYFKYMPWUPH2LDFE/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 00:00:00, 大樓藏31共享廚房上百爐火成隱憂, https://tw.appledaily.com/headline/20201013/6VOUPUQJVNDYNNRE5DHPEZS76Y/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 00:00:00, 史上最硬教召民眾若接到會欣然報到, https://tw.appledaily.com/headline/20201013/ZVMLA44U7RECLGJTZBNT7L2PSM/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 00:00:00, 不該被體制忽略的台灣女孩卓耕宇, https://tw.appledaily.com/forum/20201013/T2LH64ARIBGCLBCJNWWCEWDI5I/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 00:00:00, 美中台探針台海戰略模糊能夠維持現狀嗎賴怡忠, https://tw.appledaily.com/forum/20201013/5S47GLAEN5DNZLLRRMAXXGCRJA/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 00:00:00, 舊宅物品被盜賣司馬中原兒怒告, https://tw.appledaily.com/headline/20201013/ZGOVQLOAJNFBBMSFXS2SMH56DY/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 00:00:00, 白目騎士認貪快國道蛇行被法辦, https://tw.appledaily.com/headline/20201013/LVXCFJUKRJAXLHF555LGYMI4CI/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 00:00:00, 爭曝光度川普拜登搶參加電視問答, https://tw.appledaily.com/headline/20201013/D3VD2NK245BEDC47GT2WDDGGPE/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 00:00:00, 幫萊豬宣傳遭批沒人格陳時中人身攻擊不好, https://tw.appledaily.com/headline/20201013/E5JMDQ52XJBRRKGOKCD6V4FUHI/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 00:00:00, 霸凌女員工康軒道歉賠償, https://tw.appledaily.com/headline/20201013/4WFZ4PSEG5ADDNJCGZLCUU3XJE/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 00:00:00, 國民黨改名爆路線之爭馬英九不在改革議程中, https://tw.appledaily.com/headline/20201013/6NMBZOMEJ5HG5C4URDWUXKSFPE/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 00:00:00, 中共擾台壓力增國軍兵力快調整張延廷, https://tw.appledaily.com/forum/20201013/OIJB7CZA7NFWFMC27JKLAPGU7A/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 02:50:00, 習近平抵潮州被大媽當神拜網友抱怨擾民即被警截圖鎖定, https://tw.appledaily.com/international/20201013/BG77FW6QKZGBVNPGO722N6VHE4/
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-13 00:43:00, 央視控前助理鄭宇欽是台諜卓榮泰無此助理, https://tw.appledaily.com/international/20201012/Z4TTJDEKORCBVBOZOCCOYATQEM/
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"槽車"; 網址:"https://tw.appledaily.com/search/槽車/"
+      **** something wrong!! Restart it!! ****
+       >> 檔案輸出
+        ------------------------------------------------------
+      >> 下載新聞內容
+      >> 下載 https://tw.appledaily.com/property/20201012/NWI6QGRRTVCZPE4CB4XDE3QF2Q/, 精密機械需求旺盛鈞興9月業績持續高升
+      >> 下載 https://tw.appledaily.com/local/20201013/EZFAXSSYDFG65AHPAQ5KG3BBU4/, 百姓的苦與痛2水域活動限制多觀光局安全為主要考量
+      >> 下載 https://tw.appledaily.com/headline/20201013/6VOUPUQJVNDYNNRE5DHPEZS76Y/, 大樓藏31共享廚房上百爐火成隱憂
+      >> 下載 https://tw.appledaily.com/international/20201013/BG77FW6QKZGBVNPGO722N6VHE4/, 習近平抵潮州被大媽當神拜網友抱怨擾民即被警截圖鎖定
+      >> 下載 https://tw.appledaily.com/international/20201012/Z4TTJDEKORCBVBOZOCCOYATQEM/, 央視控前助理鄭宇欽是台諜卓榮泰無此助理
+      >> 下載 https://tw.appledaily.com/politics/20201013/DTZB3X36EVEVBOWAMBRAQ3FCB4/, 幕後央視用這兩招回應蔡英文國慶演說黨政高層分析用影片帶風向
+      >> 下載 https://tw.appledaily.com/life/20201012/OJUMNAWKLZGFZPKDEWOZKXPS7A/, 扯大樓地下室藏31個廚房130個爐火全天運作議員轟北市府踢皮球
+      >> 下載 https://tw.appledaily.com/local/20201012/Z7UTHFX2TZEOTIA35F62SDYE4Q/, 一張表看它榮登慶記之都鄉民崩潰台中輸了怎麼可能
+      >> 下載 https://tw.appledaily.com/local/20201012/LKMQUGYGFRD3BACTDVOQ62YA7M/, 秋季入山蜂螫案件數攀升台東鹿野4遊客移路障遭虎頭蜂螫送醫
+      >> 下載 https://tw.appledaily.com/politics/20201012/KZLIOWBUSFDLRD6I3PT5SGXZ54/, 央視稱破百起台諜案陳明通籲對岸停止政治炒作破壞兩岸關係
+      >> 下載 https://tw.appledaily.com/politics/20201012/RSNN4EHR3FALVEB7C7QPMSAMC4/, 央視播李孟居被自白陳其邁中國做法愚蠢
+      >> 下載 https://tw.appledaily.com/headline/20201014/WFWPTLQ5EFDB3DNBFQEKH4WX2Q/, 癒後拼造勢川普我有免疫力了
+      >> 下載 https://tw.appledaily.com/supplement/20201013/RZJAJDZSHBGDZMJCU5WBNQ6VMA/, Longtail秋季海陸大餐報到升級版鴨肝餃融合台法風情
+      >> 下載 https://tw.appledaily.com/international/20201012/CHL3SEDYQZBLZC32TLTA6SNHPA/, 川普確診大讚抗體雞尾酒神藥稱很快可獲緊急使用授權
+      >> 下載 https://tw.appledaily.com/life/20201013/C47S6QGC5VF3HJWTD3KSQ2V32I/, 爭取嚴重藥物過敏患者一線生機林口長庚最新研究找到關鍵監測指標
+      >> 找不到新聞內容，可能是新聞需要付費。
+      >> 下載 https://tw.appledaily.com/international/20201013/N7M5WR46GBGCHIYFP2NASUET2Q/, 恐怖酸湯子30小時殺光母子4人毒性是砒霜20倍以上
+      >> 下載 https://tw.appledaily.com/local/20201012/LKMQUGYGFRD3BACTDVOQ62YA7M/, 秋季入山蜂螫案件數攀升台東鹿野4遊客移路障遭虎頭蜂螫送醫
+      >> 下載 https://tw.appledaily.com/life/20201012/URHMCHWL4BFXTEZFWRJWK6Q7CQ/, 賴士葆轟小英將萊劑美豬政治化源頭管理根本是呼攏人民
+      >> 下載 https://tw.appledaily.com/local/20201012/QSXCQZFHZNBB7FOADFB3UXSDFI/, 毒癮戒治靠合作醫師檢察官社工師交流經驗
+      >> 下載 https://tw.appledaily.com/life/20201012/URHMCHWL4BFXTEZFWRJWK6Q7CQ/, 賴士葆轟小英將萊劑美豬政治化源頭管理根本是呼攏人民
+      >> 下載 https://tw.appledaily.com/supplement/20201013/IVKXU7GVWZEJVDSHLE5XRT4ZAQ/, 西營盤菜攤搜羅各國特色菜能買到台灣水蓮和芋香冬瓜
+      >> 下載 https://tw.appledaily.com/supplement/20201013/UEO5R5G6ABDL5D34Y3YBYZMAHE/, 網推地表最好吃曲奇高雄快閃開賣甜點控也瘋狂
+      >> 下載 https://tw.appledaily.com/supplement/20201013/RZJAJDZSHBGDZMJCU5WBNQ6VMA/, Longtail秋季海陸大餐報到升級版鴨肝餃融合台法風情
+      >> 下載 https://tw.appledaily.com/property/20201012/K6MKZIRCDJABDJZSO4H6YENJQA/, 投資客搶灘重劃區第三季千億推案集中這兩地
+      >> 下載 https://tw.appledaily.com/politics/20201012/K2BIUSJFX5CXFAQI4OU5NFBM3Y/, 開放美豬牛民眾黨發起網路公民連署3大訴求把關護食安
+      >> 下載 https://tw.appledaily.com/local/20201012/YLQA4XA67ZFSNJERPBJOJBRDM4/, 噁爆叫外送牛丼飯店家竟送來抹布蒸飯
+      >> 下載 https://tw.appledaily.com/forum/20201013/T2LH64ARIBGCLBCJNWWCEWDI5I/, 不該被體制忽略的台灣女孩卓耕宇
+      >> 下載 https://tw.appledaily.com/forum/20201012/K37QRIGMB5ATBHJYLRNH3WXQLE/, 不該被體制忽略的台灣女孩卓耕宇
+      >> 下載 https://tw.appledaily.com/international/20201012/NBLFPMFZ7RHJJFQC5VLARPN4CU/, 我有炸彈正妹網紅潑汽油搶銀行5分鐘劫286萬元搭計程車落跑
+      >> 下載 https://tw.appledaily.com/entertainment/20201012/QJM4TBO3NNERTIPDGDRNOJ3QH4/, 咖啡廳勸對方別抽反被吐菸Paul氣炸怒槓對方
+      >> 下載 https://tw.appledaily.com/local/20201012/G43AMFNSW5BI5LKFX4CDKZPLKE/, 縱火犯落網搜出假炸彈檢警查出涉恐嚇取財
+      >> 下載 https://tw.appledaily.com/international/20201012/NBLFPMFZ7RHJJFQC5VLARPN4CU/, 我有炸彈正妹網紅潑汽油搶銀行5分鐘劫286萬元搭計程車落跑
+      >> 下載 https://tw.appledaily.com/international/20201012/VLUXESWXIJCHHHEJMQ7KA5AFBA/, 諾貝爾革新拍賣理論美國師生檔兩學者摘下經濟學獎
+      >> 下載 https://tw.appledaily.com/international/20201013/N7M5WR46GBGCHIYFP2NASUET2Q/, 恐怖酸湯子30小時殺光母子4人毒性是砒霜20倍以上
+      >> 下載 https://tw.appledaily.com/headline/20201013/HPKQNNGPCFBSJNVOUNFRNV2GSA/, 桃園打造環保夜市
+      >> 下載 https://tw.appledaily.com/supplement/20201013/IVKXU7GVWZEJVDSHLE5XRT4ZAQ/, 西營盤菜攤搜羅各國特色菜能買到台灣水蓮和芋香冬瓜
+      >> 下載 https://tw.appledaily.com/politics/20201013/S44BWQSRCBB6LKYID4V2WSBFKQ/, VideoTalk陳其邁就任50天白眼女神變笑眼黃捷舉一點狂勝韓國瑜
+      >> 下載 https://tw.appledaily.com/politics/20201012/ICOEIFEH2NHW5N6D5FSDL7SR4Y/, VideoTalk陳其邁就任滿50天黃捷讚問政不再平行時空
+      >> 下載 https://tw.appledaily.com/property/20201013/ZZ65BOZOFJGV5NV56PZTJUD55U/, 施耐德攜手宏于電機打造東亞首座電力服務中心
+      >> 下載 https://tw.appledaily.com/local/20201013/N6C375MUEBHUZHD7YUPHDYDKKY/, 百姓的苦與痛1海洋國家淪口號水上玩家力爭水域解嚴
+      >> 下載 https://tw.appledaily.com/local/20201013/EZFAXSSYDFG65AHPAQ5KG3BBU4/, 百姓的苦與痛2水域活動限制多觀光局安全為主要考量
+      >> 下載 https://tw.appledaily.com/local/20201013/WPD4TPAWYRH5TPWNSW55XQCEKM/, 百姓的苦與痛3強制投保減少社會資源浪費專家籲下水前做好功課對自己負責
+      >> 下載 https://tw.appledaily.com/international/20201013/ZCGGLC2K25HVHJYNSBX5WF2FSA/, 央視又曝光台諜案美媒中共近年頻用間諜案實施外交報復
+      >> 下載 https://tw.appledaily.com/international/20201013/57A4RF5IW5DYNLYUNZM6HUCOSE/, 美副國務卿訪印稱中國是房間裡的大象
+      >> 下載 https://tw.appledaily.com/international/20201013/A3AOLCAN7BAYFKYMPWUPH2LDFE/, 曾挺捷克議長訪台斯洛伐克女總統再讓華為碰釘子
+      >> 下載 https://tw.appledaily.com/headline/20201013/6VOUPUQJVNDYNNRE5DHPEZS76Y/, 大樓藏31共享廚房上百爐火成隱憂
+      >> 下載 https://tw.appledaily.com/headline/20201013/ZVMLA44U7RECLGJTZBNT7L2PSM/, 史上最硬教召民眾若接到會欣然報到
+      >> 下載 https://tw.appledaily.com/forum/20201013/T2LH64ARIBGCLBCJNWWCEWDI5I/, 不該被體制忽略的台灣女孩卓耕宇
+      >> 下載 https://tw.appledaily.com/forum/20201013/5S47GLAEN5DNZLLRRMAXXGCRJA/, 美中台探針台海戰略模糊能夠維持現狀嗎賴怡忠
+      >> 下載 https://tw.appledaily.com/headline/20201013/ZGOVQLOAJNFBBMSFXS2SMH56DY/, 舊宅物品被盜賣司馬中原兒怒告
+      >> 下載 https://tw.appledaily.com/headline/20201013/LVXCFJUKRJAXLHF555LGYMI4CI/, 白目騎士認貪快國道蛇行被法辦
+      >> 下載 https://tw.appledaily.com/headline/20201013/D3VD2NK245BEDC47GT2WDDGGPE/, 爭曝光度川普拜登搶參加電視問答
+      >> 下載 https://tw.appledaily.com/headline/20201013/E5JMDQ52XJBRRKGOKCD6V4FUHI/, 幫萊豬宣傳遭批沒人格陳時中人身攻擊不好
+      >> 下載 https://tw.appledaily.com/headline/20201013/4WFZ4PSEG5ADDNJCGZLCUU3XJE/, 霸凌女員工康軒道歉賠償
+      >> 下載 https://tw.appledaily.com/headline/20201013/6NMBZOMEJ5HG5C4URDWUXKSFPE/, 國民黨改名爆路線之爭馬英九不在改革議程中
+      >> 下載 https://tw.appledaily.com/forum/20201013/OIJB7CZA7NFWFMC27JKLAPGU7A/, 中共擾台壓力增國軍兵力快調整張延廷
+      >> 下載 https://tw.appledaily.com/international/20201013/BG77FW6QKZGBVNPGO722N6VHE4/, 習近平抵潮州被大媽當神拜網友抱怨擾民即被警截圖鎖定
+      >> 下載 https://tw.appledaily.com/international/20201012/Z4TTJDEKORCBVBOZOCCOYATQEM/, 央視控前助理鄭宇欽是台諜卓榮泰無此助理

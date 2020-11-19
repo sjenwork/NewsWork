@@ -1,0 +1,283 @@
+     -----> 新聞爬蟲：自由時報電子報
+
+           <<< 自由時報電子報新聞搜尋 >>>
+        ------------------------------------------------------
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"工業用"; 網址:"https://news.ltn.com.tw/search?keyword=工業用&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> get more than 1 element. Please confirm.
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"化工"; 網址:"https://news.ltn.com.tw/search?keyword=化工&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "化工"; 文章資訊: 2020-10-02 14:43:00, 資金專法第2年首月僅5件申請財部看好逐月增溫, https://news.ltn.com.tw/news/business/breakingnews/3309825
+         >>> 找到關鍵字 "化工"; 文章資訊: 2020-10-02 08:03:00, 疫苗問世別太樂觀英學者估生活重回正軌得半年以上, https://news.ltn.com.tw/news/world/breakingnews/3309472
+         <<< 2020-10-03 沒有更多 "化工" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"化災"; 網址:"https://news.ltn.com.tw/search?keyword=化災&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> get more than 1 element. Please confirm.
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"化學"; 網址:"https://news.ltn.com.tw/search?keyword=化學&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "化學"; 文章資訊: 2020-10-03 00:00:00, 接受正規療法48歲男戰勝下咽癌第4期, https://news.ltn.com.tw/news/health/paper/1403614
+         >>> 找到關鍵字 "化學"; 文章資訊: 2020-10-03 00:39:00, 又命中盲眼龍婆曾預測美國第45任總統染致命疾病, https://news.ltn.com.tw/news/world/breakingnews/3310209
+         >>> 找到關鍵字 "化學"; 文章資訊: 2020-10-02 15:06:00, 政敵指控普廷下毒克里姆林宮反批納瓦尼與CIA合作, https://news.ltn.com.tw/news/world/breakingnews/3309530
+         <<< 2020-10-03 沒有更多 "化學" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"外洩"; 網址:"https://news.ltn.com.tw/search?keyword=外洩&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> get more than 1 element. Please confirm.
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"危害"; 網址:"https://news.ltn.com.tw/search?keyword=危害&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-03 00:00:00, 自由廣場黑熊711號事件裡的農友, https://news.ltn.com.tw/news/opinion/paper/1403583
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-03 00:00:00, 保溫箱藏毒裝美食外送員販毒, https://news.ltn.com.tw/news/society/paper/1403494
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-02 19:45:00, 綠委提案禁揮五星旗宣傳藍委反擊2018法務部曾打臉, https://news.ltn.com.tw/news/politics/breakingnews/3310069
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-02 19:07:00, 搭捷運亂吐紅汁檳榔哥怒嗆保全要回家拿刀GG了, https://news.ltn.com.tw/news/society/breakingnews/3310036
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-02 17:01:00, 川普確診雖酸付出代價胡錫進難得送祝福盼度過難關, https://news.ltn.com.tw/news/world/breakingnews/3309908
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-02 12:44:00, 五星旗亂象綠委提案禁揮五星旗宣傳陳玉珍乾脆修法定義對岸是敵國, https://news.ltn.com.tw/news/politics/breakingnews/3309710
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-02 11:47:00, 今晚我想來點毒蟲異想天開竟偽裝成外送員販毒, https://news.ltn.com.tw/news/society/breakingnews/3309647
+         >>> 找到關鍵字 "危害"; 文章資訊: 2020-10-02 10:31:00, 台灣黑熊三度受傷中市農業局籲農民勿用獸鋏山豬吊, https://news.ltn.com.tw/news/life/breakingnews/3309578
+         <<< 2020-10-03 沒有更多 "危害" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"有毒"; 網址:"https://news.ltn.com.tw/search?keyword=有毒&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "有毒"; 文章資訊: 2020-10-02 15:06:00, 政敵指控普廷下毒克里姆林宮反批納瓦尼與CIA合作, https://news.ltn.com.tw/news/world/breakingnews/3309530
+         <<< 2020-10-03 沒有更多 "有毒" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"有害"; 網址:"https://news.ltn.com.tw/search?keyword=有害&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "有害"; 文章資訊: 2020-10-02 19:00:00, 歐陽妮妮同居ing張書豪肉貼女友激情濕吻, https://news.ltn.com.tw/news/entertainment/breakingnews/3310035
+         >>> 找到關鍵字 "有害"; 文章資訊: 2020-10-02 17:18:00, 女友跟好兄弟親熱小郭雪芙男友還幫我設計動作, https://news.ltn.com.tw/news/entertainment/breakingnews/3309947
+         >>> 找到關鍵字 "有害"; 文章資訊: 2020-10-02 16:59:00, 5千元性交易變性侵坐檯小姐怒告田僑仔獲賠償81萬, https://news.ltn.com.tw/news/society/breakingnews/3309922
+         >>> 找到關鍵字 "有害"; 文章資訊: 2020-10-02 14:50:00, 酒駕撞傷母子逃逸正義司機狂追攔人撞到人知不知道, https://news.ltn.com.tw/news/society/breakingnews/3309791
+         >>> 找到關鍵字 "有害"; 文章資訊: 2020-10-02 12:49:00, 36歲主持人騎機車出意外不治遭爆涉酒駕, https://news.ltn.com.tw/news/entertainment/breakingnews/3309709
+         <<< 2020-10-03 沒有更多 "有害" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"色料"; 網址:"https://news.ltn.com.tw/search?keyword=色料&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> get more than 1 element. Please confirm.
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"色素"; 網址:"https://news.ltn.com.tw/search?keyword=色素&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "色素"; 文章資訊: 2020-10-03 00:00:00, 消費快遞香奈兒全新唇彩持色防水今秋夯品超炫耀釉光唇萃許瑋甯最愛浪漫法式紅唇一抹好氣色, https://news.ltn.com.tw/news/consumer/paper/1403473
+         >>> 找到關鍵字 "色素"; 文章資訊: 2020-10-02 14:13:00, 許瑋甯用香奈兒補妝像拍電影場合不設限, https://news.ltn.com.tw/news/entertainment/breakingnews/3309792
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"毒性"; 網址:"https://news.ltn.com.tw/search?keyword=毒性&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "毒性"; 文章資訊: 2020-10-03 00:00:00, 增2例境外移入分從美日入境, https://news.ltn.com.tw/news/life/paper/1403506
+         >>> 找到關鍵字 "毒性"; 文章資訊: 2020-10-02 20:16:00, 中秋連假人潮聚集慎防腸胃炎及腸胃型感冒, https://news.ltn.com.tw/news/health/breakingnews/3310072
+         >>> 找到關鍵字 "毒性"; 文章資訊: 2020-10-02 14:14:00, 國內新增2境外移入病例2台男自美國日本入境確診, https://news.ltn.com.tw/news/life/breakingnews/3309794
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"毒品"; 網址:"https://news.ltn.com.tw/search?keyword=毒品&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "毒品"; 文章資訊: 2020-10-03 00:00:00, 販毒搞變裝借制服扮外送員運毒, https://news.ltn.com.tw/news/society/paper/1403596
+         >>> 找到關鍵字 "毒品"; 文章資訊: 2020-10-03 00:00:00, 自由廣場從隧道理論看馬英九, https://news.ltn.com.tw/news/opinion/paper/1403587
+         >>> 找到關鍵字 "毒品"; 文章資訊: 2020-10-03 00:00:00, 保溫箱藏毒裝美食外送員販毒, https://news.ltn.com.tw/news/society/paper/1403494
+         >>> 找到關鍵字 "毒品"; 文章資訊: 2020-10-02 23:05:00, 打到漏尿男子遭私刑狂毆嫌犯還嘻笑PO網, https://news.ltn.com.tw/news/society/breakingnews/3310058
+         >>> 找到關鍵字 "毒品"; 文章資訊: 2020-10-02 15:22:00, 不爽女友被橫刀奪愛毒蟲舉報情敵藏2把槍, https://news.ltn.com.tw/news/society/breakingnews/3309833
+         >>> 找到關鍵字 "毒品"; 文章資訊: 2020-10-02 11:47:00, 今晚我想來點毒蟲異想天開竟偽裝成外送員販毒, https://news.ltn.com.tw/news/society/breakingnews/3309647
+         >>> 找到關鍵字 "毒品"; 文章資訊: 2020-10-02 10:42:00, 天后自揭坎坷童年親姊騙吸毒企圖賣妓院, https://news.ltn.com.tw/news/entertainment/breakingnews/3309586
+         <<< 2020-10-03 沒有更多 "毒品" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"致癌"; 網址:"https://news.ltn.com.tw/search?keyword=致癌&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "致癌"; 文章資訊: 2020-10-02 19:15:00, 健康網吃太多烤肉恐引發大腸癌政府提供5074歲免費篩檢, https://news.ltn.com.tw/news/health/breakingnews/3310043
+         >>> 找到關鍵字 "致癌"; 文章資訊: 2020-10-02 15:56:00, 長時間胸悶胸痛竟是火燒心惹禍, https://news.ltn.com.tw/news/health/breakingnews/3309872
+         >>> 找到關鍵字 "致癌"; 文章資訊: 2020-10-02 15:28:00, 秋節大啖香腸柚子醫師提醒要忌口, https://news.ltn.com.tw/news/health/breakingnews/3309848
+         <<< 2020-10-03 沒有更多 "致癌" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"重金屬"; 網址:"https://news.ltn.com.tw/search?keyword=重金屬&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         <<< 2020-10-03 沒有更多 "重金屬" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"食安"; 網址:"https://news.ltn.com.tw/search?keyword=食安&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "食安"; 文章資訊: 2020-10-02 14:43:00, 小農市集前進新營服務區友善耕作農產品吸客, https://news.ltn.com.tw/news/life/breakingnews/3309824
+         >>> 找到關鍵字 "食安"; 文章資訊: 2020-10-02 11:25:00, 國民黨反萊豬網路調查要民眾留手機資料日後動員抗議, https://news.ltn.com.tw/news/politics/breakingnews/3309621
+         >>> 找到關鍵字 "食安"; 文章資訊: 2020-10-02 09:42:00, 玉山論壇我將與美日10多國探討疫後合作蔡總統致開幕詞, https://news.ltn.com.tw/news/politics/breakingnews/3309541
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"香料"; 網址:"https://news.ltn.com.tw/search?keyword=香料&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> get more than 1 element. Please confirm.
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"原料"; 網址:"https://news.ltn.com.tw/search?keyword=原料&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         <<< 2020-10-03 沒有更多 "原料" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"氣爆"; 網址:"https://news.ltn.com.tw/search?keyword=氣爆&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> get more than 1 element. Please confirm.
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"添加物"; 網址:"https://news.ltn.com.tw/search?keyword=添加物&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "添加物"; 文章資訊: 2020-10-02 15:28:00, 秋節大啖香腸柚子醫師提醒要忌口, https://news.ltn.com.tw/news/health/breakingnews/3309848
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"黑心"; 網址:"https://news.ltn.com.tw/search?keyword=黑心&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> get more than 1 element. Please confirm.
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"漂白"; 網址:"https://news.ltn.com.tw/search?keyword=漂白&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> get more than 1 element. Please confirm.
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"爆炸"; 網址:"https://news.ltn.com.tw/search?keyword=爆炸&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-10-02 19:59:00, 川普確診葉毓蘭英文信酸文挨轟急刪他點出丟臉之處, https://news.ltn.com.tw/news/politics/breakingnews/3310007
+         <<< 2020-10-03 沒有更多 "爆炸" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"新興"; 網址:"https://news.ltn.com.tw/search?keyword=新興&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "新興"; 文章資訊: 2020-10-03 00:00:00, 遊南庄十三間老街帶茄芷袋享優惠, https://news.ltn.com.tw/news/life/paper/1403548
+         >>> 找到關鍵字 "新興"; 文章資訊: 2020-10-02 13:11:00, 民主黨若橫掃美國選舉大勝利這3國亞洲國債得當心, https://news.ltn.com.tw/news/business/breakingnews/3309628
+         <<< 2020-10-03 沒有更多 "新興" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"爆裂物"; 網址:"https://news.ltn.com.tw/search?keyword=爆裂物&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> get more than 1 element. Please confirm.
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"IED"; 網址:"https://news.ltn.com.tw/search?keyword=IED&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "IED"; 文章資訊: 2020-10-03 03:00:00, TAIPEITIMESUSslamsTaiwansfishingfleet, https://news.ltn.com.tw/news/focus/breakingnews/3310203
+         >>> 找到關鍵字 "IED"; 文章資訊: 2020-10-02 18:25:00, 川普確診宣布染疫後美東西岸核末日軍機升空, https://news.ltn.com.tw/news/world/breakingnews/3309958
+         >>> 找到關鍵字 "IED"; 文章資訊: 2020-10-02 11:49:00, 台男在澳洲參加婚禮後車禍身亡屍體4天後才被發現, https://news.ltn.com.tw/news/world/breakingnews/3309612
+         <<< 2020-10-03 沒有更多 "IED" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"排放"; 網址:"https://news.ltn.com.tw/search?keyword=排放&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "排放"; 文章資訊: 2020-10-02 23:32:00, 賽車震驚本田退出F1紅牛車隊未來該怎麼辦, https://news.ltn.com.tw/news/sports/breakingnews/3310201
+         >>> 找到關鍵字 "排放"; 文章資訊: 2020-10-02 13:36:00, 中市拚環保議員垃圾車卻老舊增加空污頻故障, https://news.ltn.com.tw/news/life/breakingnews/3309745
+         <<< 2020-10-03 沒有更多 "排放" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"污染"; 網址:"https://news.ltn.com.tw/search?keyword=污染&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "污染"; 文章資訊: 2020-10-03 00:00:00, 好天氣現出遊潮觀光景點爆棚, https://news.ltn.com.tw/news/life/paper/1403503
+         >>> 找到關鍵字 "污染"; 文章資訊: 2020-10-03 00:00:00, 核二廠1號機明年5月真停機假除役, https://news.ltn.com.tw/news/business/paper/1403500
+         >>> 找到關鍵字 "污染"; 文章資訊: 2020-10-02 19:07:00, 搭捷運亂吐紅汁檳榔哥怒嗆保全要回家拿刀GG了, https://news.ltn.com.tw/news/society/breakingnews/3310036
+         >>> 找到關鍵字 "污染"; 文章資訊: 2020-10-02 15:40:00, 今日起空氣品質轉差環保署恐達紅色警示, https://news.ltn.com.tw/news/life/breakingnews/3309859
+         >>> 找到關鍵字 "污染"; 文章資訊: 2020-10-02 13:36:00, 中市拚環保議員垃圾車卻老舊增加空污頻故障, https://news.ltn.com.tw/news/life/breakingnews/3309745
+         <<< 2020-10-03 沒有更多 "污染" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"廢水"; 網址:"https://news.ltn.com.tw/search?keyword=廢水&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "廢水"; 文章資訊: 2020-10-03 00:00:00, 核二廠1號機明年5月真停機假除役, https://news.ltn.com.tw/news/business/paper/1403500
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"污水"; 網址:"https://news.ltn.com.tw/search?keyword=污水&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "污水"; 文章資訊: 2020-10-03 00:00:00, 新北空軍三重一村委外營運不設限, https://news.ltn.com.tw/news/life/paper/1403569
+         >>> 找到關鍵字 "污水"; 文章資訊: 2020-10-02 21:33:00, 台南哈赫拿爾森林保留黃偉哲綜合考量水質環境, https://news.ltn.com.tw/news/life/breakingnews/3310123
+         <<< 2020-10-03 沒有更多 "污水" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"洩漏"; 網址:"https://news.ltn.com.tw/search?keyword=洩漏&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "洩漏"; 文章資訊: 2020-10-02 17:32:00, 洩漏科學機密給中國俄羅斯科學家遭逮捕, https://news.ltn.com.tw/news/world/breakingnews/3309938
+         >>> 找到關鍵字 "洩漏"; 文章資訊: 2020-10-02 12:19:00, 金曲31星光超爆棚蔡依林Ella都來了, https://news.ltn.com.tw/news/entertainment/breakingnews/3309685
+         <<< 2020-10-03 沒有更多 "洩漏" 相關的新聞 !!! >>>
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"暗管"; 網址:"https://news.ltn.com.tw/search?keyword=暗管&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> get more than 1 element. Please confirm.
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"偷排"; 網址:"https://news.ltn.com.tw/search?keyword=偷排&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> get more than 1 element. Please confirm.
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"安全"; 網址:"https://news.ltn.com.tw/search?keyword=安全&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 07:11:00, 係真A玉山單攻限時又設門禁官網攀登攻略報恁知, https://news.ltn.com.tw/news/life/breakingnews/3310258
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 06:18:00, 川普確診拜登檢驗結果出爐武漢肺炎陰性反應, https://news.ltn.com.tw/news/world/breakingnews/3310218
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 06:12:00, 美國學者兩岸10年內必有一戰時間可能是2028年, https://news.ltn.com.tw/news/world/breakingnews/3310242
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 00:00:00, 美國難民接納計畫首納香港人, https://news.ltn.com.tw/news/world/paper/1403623
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 00:00:00, 川普夫婦中鏢蔡總統透過AIT致意, https://news.ltn.com.tw/news/world/paper/1403621
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 00:00:00, 祝福川普拜登檢測陰性, https://news.ltn.com.tw/news/world/paper/1403615
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 00:00:00, 防堵混淆敵我意識立委提案舉五星旗宣傳可罰5萬, https://news.ltn.com.tw/news/politics/paper/1403603
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 00:00:00, 美50參議員聯名致函貿易代表籲啟動美台BTA談判, https://news.ltn.com.tw/news/politics/paper/1403600
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 00:00:00, 自由廣場後備動員早該務實訓練, https://news.ltn.com.tw/news/opinion/paper/1403588
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 00:00:00, 自由廣場黑熊711號事件裡的農友, https://news.ltn.com.tw/news/opinion/paper/1403583
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 00:00:00, 竹市產業設計文創力侯友宜讚嘆, https://news.ltn.com.tw/news/life/paper/1403551
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 00:00:00, 走踏哈赫拿爾賴清德讚難得原始林, https://news.ltn.com.tw/news/life/paper/1403527
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 00:00:00, 幸福住宅延遲交屋判賠台東縣府將上訴, https://news.ltn.com.tw/news/life/paper/1403521
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 00:00:00, 台北市定古蹟陳天來故居明年展開修復, https://news.ltn.com.tw/news/life/paper/1403516
+         >>> 找到關鍵字 "安全"; 文章資訊: 2020-10-03 00:00:00, 台中老舊回收車未汰換清潔隊員安全堪慮, https://news.ltn.com.tw/news/life/paper/1403510
+        ------------------------------------------------------
+       >> 搜尋關鍵字:"槽車"; 網址:"https://news.ltn.com.tw/search?keyword=槽車&conditions=and&start_time=2020-10-02&end_time=2020-10-03&page=1"
+      >> Every thing goes well
+         >>> 找到關鍵字 "槽車"; 文章資訊: 2020-10-02 08:53:00, 早晨國道多通暢今有6大路段易壅塞, https://news.ltn.com.tw/news/life/breakingnews/3309502
+       >> 檔案輸出
+        ------------------------------------------------------
+      >> 下載新聞內容
+      >> 下載 https://news.ltn.com.tw/news/business/breakingnews/3309825, 資金專法第2年首月僅5件申請財部看好逐月增溫
+      >> 找不到新聞內容，可能是新聞的格式不同所致。
+      >> 下載 https://news.ltn.com.tw/news/world/breakingnews/3309472, 疫苗問世別太樂觀英學者估生活重回正軌得半年以上
+      >> 下載 https://news.ltn.com.tw/news/health/paper/1403614, 接受正規療法48歲男戰勝下咽癌第4期
+      >> 下載 https://news.ltn.com.tw/news/world/breakingnews/3310209, 又命中盲眼龍婆曾預測美國第45任總統染致命疾病
+      >> 下載 https://news.ltn.com.tw/news/world/breakingnews/3309530, 政敵指控普廷下毒克里姆林宮反批納瓦尼與CIA合作
+      >> 下載 https://news.ltn.com.tw/news/opinion/paper/1403583, 自由廣場黑熊711號事件裡的農友
+      >> 找不到新聞內容，可能是新聞的格式不同所致。
+      >> 下載 https://news.ltn.com.tw/news/society/paper/1403494, 保溫箱藏毒裝美食外送員販毒
+      >> 下載 https://news.ltn.com.tw/news/politics/breakingnews/3310069, 綠委提案禁揮五星旗宣傳藍委反擊2018法務部曾打臉
+      >> 下載 https://news.ltn.com.tw/news/society/breakingnews/3310036, 搭捷運亂吐紅汁檳榔哥怒嗆保全要回家拿刀GG了
+      >> 下載 https://news.ltn.com.tw/news/world/breakingnews/3309908, 川普確診雖酸付出代價胡錫進難得送祝福盼度過難關
+      >> 下載 https://news.ltn.com.tw/news/politics/breakingnews/3309710, 五星旗亂象綠委提案禁揮五星旗宣傳陳玉珍乾脆修法定義對岸是敵國
+      >> 下載 https://news.ltn.com.tw/news/society/breakingnews/3309647, 今晚我想來點毒蟲異想天開竟偽裝成外送員販毒
+      >> 下載 https://news.ltn.com.tw/news/life/breakingnews/3309578, 台灣黑熊三度受傷中市農業局籲農民勿用獸鋏山豬吊
+      >> 下載 https://news.ltn.com.tw/news/world/breakingnews/3309530, 政敵指控普廷下毒克里姆林宮反批納瓦尼與CIA合作
+      >> 下載 https://news.ltn.com.tw/news/entertainment/breakingnews/3310035, 歐陽妮妮同居ing張書豪肉貼女友激情濕吻
+      >> 找不到新聞內容，可能是新聞的格式不同所致。
+      >> 下載 https://news.ltn.com.tw/news/entertainment/breakingnews/3309947, 女友跟好兄弟親熱小郭雪芙男友還幫我設計動作
+      >> 找不到新聞內容，可能是新聞的格式不同所致。
+      >> 下載 https://news.ltn.com.tw/news/society/breakingnews/3309922, 5千元性交易變性侵坐檯小姐怒告田僑仔獲賠償81萬
+      >> 下載 https://news.ltn.com.tw/news/society/breakingnews/3309791, 酒駕撞傷母子逃逸正義司機狂追攔人撞到人知不知道
+      >> 下載 https://news.ltn.com.tw/news/entertainment/breakingnews/3309709, 36歲主持人騎機車出意外不治遭爆涉酒駕
+      >> 找不到新聞內容，可能是新聞的格式不同所致。
+      >> 下載 https://news.ltn.com.tw/news/consumer/paper/1403473, 消費快遞香奈兒全新唇彩持色防水今秋夯品超炫耀釉光唇萃許瑋甯最愛浪漫法式紅唇一抹好氣色
+      >> 找不到新聞內容，可能是新聞的格式不同所致。
+      >> 下載 https://news.ltn.com.tw/news/entertainment/breakingnews/3309792, 許瑋甯用香奈兒補妝像拍電影場合不設限
+      >> 找不到新聞內容，可能是新聞的格式不同所致。
+      >> 下載 https://news.ltn.com.tw/news/life/paper/1403506, 增2例境外移入分從美日入境
+      >> 下載 https://news.ltn.com.tw/news/health/breakingnews/3310072, 中秋連假人潮聚集慎防腸胃炎及腸胃型感冒
+      >> 下載 https://news.ltn.com.tw/news/life/breakingnews/3309794, 國內新增2境外移入病例2台男自美國日本入境確診
+      >> 下載 https://news.ltn.com.tw/news/society/paper/1403596, 販毒搞變裝借制服扮外送員運毒
+      >> 下載 https://news.ltn.com.tw/news/opinion/paper/1403587, 自由廣場從隧道理論看馬英九
+      >> 下載 https://news.ltn.com.tw/news/society/paper/1403494, 保溫箱藏毒裝美食外送員販毒
+      >> 下載 https://news.ltn.com.tw/news/society/breakingnews/3310058, 打到漏尿男子遭私刑狂毆嫌犯還嘻笑PO網
+      >> 下載 https://news.ltn.com.tw/news/society/breakingnews/3309833, 不爽女友被橫刀奪愛毒蟲舉報情敵藏2把槍
+      >> 下載 https://news.ltn.com.tw/news/society/breakingnews/3309647, 今晚我想來點毒蟲異想天開竟偽裝成外送員販毒
+      >> 下載 https://news.ltn.com.tw/news/entertainment/breakingnews/3309586, 天后自揭坎坷童年親姊騙吸毒企圖賣妓院
+      >> 下載 https://news.ltn.com.tw/news/health/breakingnews/3310043, 健康網吃太多烤肉恐引發大腸癌政府提供5074歲免費篩檢
+      >> 找不到新聞內容，可能是新聞的格式不同所致。
+      >> 下載 https://news.ltn.com.tw/news/health/breakingnews/3309872, 長時間胸悶胸痛竟是火燒心惹禍
+      >> 找不到新聞內容，可能是新聞的格式不同所致。
+      >> 下載 https://news.ltn.com.tw/news/health/breakingnews/3309848, 秋節大啖香腸柚子醫師提醒要忌口
+      >> 找不到新聞內容，可能是新聞的格式不同所致。
+      >> 下載 https://news.ltn.com.tw/news/life/breakingnews/3309824, 小農市集前進新營服務區友善耕作農產品吸客
+      >> 下載 https://news.ltn.com.tw/news/politics/breakingnews/3309621, 國民黨反萊豬網路調查要民眾留手機資料日後動員抗議
+      >> 下載 https://news.ltn.com.tw/news/politics/breakingnews/3309541, 玉山論壇我將與美日10多國探討疫後合作蔡總統致開幕詞
+      >> 下載 https://news.ltn.com.tw/news/health/breakingnews/3309848, 秋節大啖香腸柚子醫師提醒要忌口
+      >> 找不到新聞內容，可能是新聞的格式不同所致。
+      >> 下載 https://news.ltn.com.tw/news/politics/breakingnews/3310007, 川普確診葉毓蘭英文信酸文挨轟急刪他點出丟臉之處
+      >> 下載 https://news.ltn.com.tw/news/life/paper/1403548, 遊南庄十三間老街帶茄芷袋享優惠
+      >> 下載 https://news.ltn.com.tw/news/business/breakingnews/3309628, 民主黨若橫掃美國選舉大勝利這3國亞洲國債得當心
+      >> 找不到新聞內容，可能是新聞的格式不同所致。
+      >> 下載 https://news.ltn.com.tw/news/focus/breakingnews/3310203, TAIPEITIMESUSslamsTaiwansfishingfleet
+      >> 下載 https://news.ltn.com.tw/news/world/breakingnews/3309958, 川普確診宣布染疫後美東西岸核末日軍機升空
+      >> 下載 https://news.ltn.com.tw/news/world/breakingnews/3309612, 台男在澳洲參加婚禮後車禍身亡屍體4天後才被發現
+      >> 下載 https://news.ltn.com.tw/news/sports/breakingnews/3310201, 賽車震驚本田退出F1紅牛車隊未來該怎麼辦
+      >> 下載 https://news.ltn.com.tw/news/life/breakingnews/3309745, 中市拚環保議員垃圾車卻老舊增加空污頻故障
+      >> 下載 https://news.ltn.com.tw/news/life/paper/1403503, 好天氣現出遊潮觀光景點爆棚
+      >> 下載 https://news.ltn.com.tw/news/business/paper/1403500, 核二廠1號機明年5月真停機假除役
+      >> 找不到新聞內容，可能是新聞的格式不同所致。
+      >> 下載 https://news.ltn.com.tw/news/society/breakingnews/3310036, 搭捷運亂吐紅汁檳榔哥怒嗆保全要回家拿刀GG了
+      >> 下載 https://news.ltn.com.tw/news/life/breakingnews/3309859, 今日起空氣品質轉差環保署恐達紅色警示
+      >> 下載 https://news.ltn.com.tw/news/life/breakingnews/3309745, 中市拚環保議員垃圾車卻老舊增加空污頻故障
+      >> 下載 https://news.ltn.com.tw/news/business/paper/1403500, 核二廠1號機明年5月真停機假除役
+      >> 找不到新聞內容，可能是新聞的格式不同所致。
+      >> 下載 https://news.ltn.com.tw/news/life/paper/1403569, 新北空軍三重一村委外營運不設限
+      >> 下載 https://news.ltn.com.tw/news/life/breakingnews/3310123, 台南哈赫拿爾森林保留黃偉哲綜合考量水質環境
+      >> 下載 https://news.ltn.com.tw/news/world/breakingnews/3309938, 洩漏科學機密給中國俄羅斯科學家遭逮捕
+      >> 下載 https://news.ltn.com.tw/news/entertainment/breakingnews/3309685, 金曲31星光超爆棚蔡依林Ella都來了
+      >> 下載 https://news.ltn.com.tw/news/life/breakingnews/3310258, 係真A玉山單攻限時又設門禁官網攀登攻略報恁知
+      >> 下載 https://news.ltn.com.tw/news/world/breakingnews/3310218, 川普確診拜登檢驗結果出爐武漢肺炎陰性反應
+      >> 下載 https://news.ltn.com.tw/news/world/breakingnews/3310242, 美國學者兩岸10年內必有一戰時間可能是2028年
+      >> 下載 https://news.ltn.com.tw/news/world/paper/1403623, 美國難民接納計畫首納香港人
+      >> 下載 https://news.ltn.com.tw/news/world/paper/1403621, 川普夫婦中鏢蔡總統透過AIT致意
+      >> 下載 https://news.ltn.com.tw/news/world/paper/1403615, 祝福川普拜登檢測陰性
+      >> 下載 https://news.ltn.com.tw/news/politics/paper/1403603, 防堵混淆敵我意識立委提案舉五星旗宣傳可罰5萬
+      >> 下載 https://news.ltn.com.tw/news/politics/paper/1403600, 美50參議員聯名致函貿易代表籲啟動美台BTA談判
+      >> 下載 https://news.ltn.com.tw/news/opinion/paper/1403588, 自由廣場後備動員早該務實訓練
+      >> 下載 https://news.ltn.com.tw/news/opinion/paper/1403583, 自由廣場黑熊711號事件裡的農友
+      >> 下載 https://news.ltn.com.tw/news/life/paper/1403551, 竹市產業設計文創力侯友宜讚嘆
+      >> 下載 https://news.ltn.com.tw/news/life/paper/1403527, 走踏哈赫拿爾賴清德讚難得原始林
+      >> 下載 https://news.ltn.com.tw/news/life/paper/1403521, 幸福住宅延遲交屋判賠台東縣府將上訴
+      >> 下載 https://news.ltn.com.tw/news/life/paper/1403516, 台北市定古蹟陳天來故居明年展開修復
+      >> 下載 https://news.ltn.com.tw/news/life/paper/1403510, 台中老舊回收車未汰換清潔隊員安全堪慮
+      >> 下載 https://news.ltn.com.tw/news/life/breakingnews/3309502, 早晨國道多通暢今有6大路段易壅塞

@@ -1,0 +1,196 @@
+     -----> 新聞爬蟲：蘋果日報
+
+           <<< 蘋果日報新聞搜尋 >>>
+  ------------------------------------------------------
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"工業用"; 網址:"https://tw.appledaily.com/search/工業用/"
+         <<< 2020-10-01 沒有更多 "工業用" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"化工"; 網址:"https://tw.appledaily.com/search/化工/"
+         <<< 2020-10-01 沒有更多 "化工" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"化災"; 網址:"https://tw.appledaily.com/search/化災/"
+      **** something wrong!! Restart it!! ****
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"化學"; 網址:"https://tw.appledaily.com/search/化學/"
+         >>> 找到關鍵字 "化學"; 文章資訊: 2020-10-01 00:00:00, 槽車撞國道護欄墜地爆炸, https://tw.appledaily.com/headline/20201001/TB7HDXCVHRFP3DBVQ6EZHOZQEU/
+         <<< 2020-10-01 沒有更多 "化學" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"外洩"; 網址:"https://tw.appledaily.com/search/外洩/"
+         >>> 找到關鍵字 "外洩"; 文章資訊: 2020-10-01 00:00:00, 槽車撞國道護欄墜地爆炸, https://tw.appledaily.com/headline/20201001/TB7HDXCVHRFP3DBVQ6EZHOZQEU/
+         >>> 找到關鍵字 "外洩"; 文章資訊: 2020-09-30 21:37:00, 港國安法衛報臉書谷歌等公司恐已向港府透露用戶資料, https://tw.appledaily.com/international/20200930/NPUQK2PINVFENF7YC72VS4IIC4/
+         <<< 2020-10-01 沒有更多 "外洩" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"危害"; 網址:"https://tw.appledaily.com/search/危害/"
+      **** something wrong!! Restart it!! ****
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"有毒"; 網址:"https://tw.appledaily.com/search/有毒/"
+         >>> 找到關鍵字 "有毒"; 文章資訊: 2020-09-30 12:15:00, 電子煙恐致癌甚至致命醫師霧化器加熱會釋放毒金屬, https://tw.appledaily.com/life/20200930/7K3LHFEUI5HWHBDT6NENXVL32A/
+         >>> 找到關鍵字 "有毒"; 文章資訊: 2020-09-30 08:34:00, NBA暖心庫班再出招找到威斯特還出錢讓他入院治療, https://tw.appledaily.com/sports/20200930/C7FIDP4BEBHTRJBWVLCBQ7DF44/
+         <<< 2020-10-01 沒有更多 "有毒" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"有害"; 網址:"https://tw.appledaily.com/search/有害/"
+         >>> 找到關鍵字 "有害"; 文章資訊: 2020-09-30 17:43:00, 獨家嚼菸禁令1王建民郭泓志都嚼過味全龍教練違法販賣判罰百萬, https://tw.appledaily.com/local/20200930/6X6JATS34NGSZAFKSJ467XOIWY/
+         >>> 找到關鍵字 "有害"; 文章資訊: 2020-09-30 17:42:00, TCRC蘇格蘭沒有蛋超吸睛統一麵變化料理台南花園夜市開賣, https://tw.appledaily.com/supplement/20200930/3MW3KGHLR5DZBD6U7FQ34FOQWU/
+         >>> 找到關鍵字 "有害"; 文章資訊: 2020-09-30 09:33:00, 嚼菸禁令5菸商促銷沒燃燒低危害榮總醫曝真相, https://tw.appledaily.com/local/20200930/UZFLXE6QKVFL3JJCPCI4YJLFDM/
+         >>> 找到關鍵字 "有害"; 文章資訊: 2020-09-30 09:41:00, 嚼菸禁令4MLB名人堂球星因它罹癌過世大聯盟今年下令禁嚼, https://tw.appledaily.com/sports/20200929/CUVYQMZYP5AEVKDCJF3X55BSLQ/
+         >>> 找到關鍵字 "有害"; 文章資訊: 2020-09-30 11:09:00, 柯文哲邀蔣萬安吃飯促藍白合陳時中我現在沒時間想這件事, https://tw.appledaily.com/life/20200930/GBRW4CY46FHRVHSP6AAGIG6YG4/
+         >>> 找到關鍵字 "有害"; 文章資訊: 2020-09-30 09:40:00, 嚼菸禁令3洋將帶進風氣教練球員愛嚼到了球場就想吃, https://tw.appledaily.com/sports/20200930/KNW52HSWEREURDPWN5MQAMAZXA/
+         <<< 2020-10-01 沒有更多 "有害" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"色料"; 網址:"https://tw.appledaily.com/search/色料/"
+         <<< 2020-10-01 沒有更多 "色料" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"色素"; 網址:"https://tw.appledaily.com/search/色素/"
+         <<< 2020-10-01 沒有更多 "色素" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"毒性"; 網址:"https://tw.appledaily.com/search/毒性/"
+         <<< 2020-10-01 沒有更多 "毒性" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"毒品"; 網址:"https://tw.appledaily.com/search/毒品/"
+      **** something wrong!! Restart it!! ****
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"致癌"; 網址:"https://tw.appledaily.com/search/致癌/"
+         >>> 找到關鍵字 "致癌"; 文章資訊: 2020-09-30 12:15:00, 電子煙恐致癌甚至致命醫師霧化器加熱會釋放毒金屬, https://tw.appledaily.com/life/20200930/7K3LHFEUI5HWHBDT6NENXVL32A/
+         >>> 找到關鍵字 "致癌"; 文章資訊: 2020-10-01 00:11:00, 未來肉植物肉仿真添油增風險醫建議低溫少油烹調是健康關鍵, https://tw.appledaily.com/life/20201001/SJAZI3LXRVGXPFZ6SHZ4R4RFZI/
+         >>> 找到關鍵字 "致癌"; 文章資訊: 2020-10-01 00:15:00, 秋節瘋烤肉豬里肌肉文蛤最夯營養師配生菜吃少加奶油, https://tw.appledaily.com/life/20201001/RSJPLYG4SRDKFBSOKVP6HY3KIE/
+         <<< 2020-10-01 沒有更多 "致癌" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"重金屬"; 網址:"https://tw.appledaily.com/search/重金屬/"
+         <<< 2020-10-01 沒有更多 "重金屬" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"食安"; 網址:"https://tw.appledaily.com/search/食安/"
+      **** something wrong!! Restart it!! ****
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"香料"; 網址:"https://tw.appledaily.com/search/香料/"
+         >>> 找到關鍵字 "香料"; 文章資訊: 2020-10-01 00:22:00, 新開店〡大馬女孩賣椰漿飯香料炸雞味飄香, https://tw.appledaily.com/supplement/20201001/RLB6NC5JMRGL3IX7GANZBAFM6Y/
+         >>> 找到關鍵字 "香料"; 文章資訊: 2020-10-01 00:15:00, 秋節瘋烤肉豬里肌肉文蛤最夯營養師配生菜吃少加奶油, https://tw.appledaily.com/life/20201001/RSJPLYG4SRDKFBSOKVP6HY3KIE/
+         >>> 找到關鍵字 "香料"; 文章資訊: 2020-10-01 00:20:00, 新開店教堂打造餐酒館好拍好吃食趣破表, https://tw.appledaily.com/supplement/20201001/3NR5I5XGERARTKUHKZUY4RBDD4/
+         >>> 找到關鍵字 "香料"; 文章資訊: 2020-09-30 09:40:00, 嚼菸禁令3洋將帶進風氣教練球員愛嚼到了球場就想吃, https://tw.appledaily.com/sports/20200930/KNW52HSWEREURDPWN5MQAMAZXA/
+         <<< 2020-10-01 沒有更多 "香料" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"原料"; 網址:"https://tw.appledaily.com/search/原料/"
+         <<< 2020-10-01 沒有更多 "原料" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"氣爆"; 網址:"https://tw.appledaily.com/search/氣爆/"
+         <<< 2020-10-01 沒有更多 "氣爆" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"添加物"; 網址:"https://tw.appledaily.com/search/添加物/"
+         >>> 找到關鍵字 "添加物"; 文章資訊: 2020-10-01 00:10:00, 未來肉不怕瘦肉精美豬亂胃蘋果實測嘗鮮植物肉肉丸乾硬肉排清爽, https://tw.appledaily.com/life/20201001/FEGHTU4SRNFXNNNQUQKWF7AIHU/
+         >>> 找到關鍵字 "添加物"; 文章資訊: 2020-10-01 00:11:00, 未來肉植物肉仿真添油增風險醫建議低溫少油烹調是健康關鍵, https://tw.appledaily.com/life/20201001/SJAZI3LXRVGXPFZ6SHZ4R4RFZI/
+         >>> 找到關鍵字 "添加物"; 文章資訊: 2020-09-30 12:15:00, 電子煙恐致癌甚至致命醫師霧化器加熱會釋放毒金屬, https://tw.appledaily.com/life/20200930/7K3LHFEUI5HWHBDT6NENXVL32A/
+         <<< 2020-10-01 沒有更多 "添加物" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"黑心"; 網址:"https://tw.appledaily.com/search/黑心/"
+         <<< 2020-10-01 沒有更多 "黑心" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"漂白"; 網址:"https://tw.appledaily.com/search/漂白/"
+         <<< 2020-10-01 沒有更多 "漂白" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"爆炸"; 網址:"https://tw.appledaily.com/search/爆炸/"
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-10-01 06:52:00, 鐵皮紙廠整棟噴火延燒2戶3口之家嗆醒驚逃, https://tw.appledaily.com/local/20201001/HLNR35HGXFHDLGPFHEKUJZPXW4/
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-10-01 00:00:00, 槽車撞國道護欄墜地爆炸, https://tw.appledaily.com/headline/20201001/TB7HDXCVHRFP3DBVQ6EZHOZQEU/
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-09-30 22:04:00, 槽車墜匣道氫氣遇空氣易燃居民被爆炸聲驚醒比921大, https://tw.appledaily.com/local/20200930/3JHYKKCN3FEBPDWHZU5CYAZWJE/
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-09-30 21:47:00, 影片曝光氫氣槽車墜國道20米駕駛慘死爆炸5次火光四射震波衝擊2公里外, https://tw.appledaily.com/local/20200930/6H23IZA3YBFTXJBCHGWR4CSA5Q/
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-10-01 00:00:00, 長下坡越開越快死亡彎道易翻車, https://tw.appledaily.com/headline/20201001/PBYAQY2HE5DX7E7MZ3JRWCAXN4/
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-10-01 00:00:00, 馬志翔被尿噴解鎖新奶爸拜師張孝全, https://tw.appledaily.com/entertainment/20201001/M3X7NFPWRNAEDGOOEQLTIHVBOA/
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-10-01 00:00:00, 遭踢爆爽拿8千車馬費高鐵董座不再領了, https://tw.appledaily.com/headline/20201001/DMHK5WUEORENRAB4ZK3DF2XKYY/
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-10-01 00:00:00, KellyTalk小S合體3女兒登封比美點名許老三最自戀, https://tw.appledaily.com/entertainment/20201001/Q2UK5Q53URF6FKLYNMAARRJQII/
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-10-01 00:00:00, 地震全台有感僅北市收警報, https://tw.appledaily.com/headline/20201001/3KF6LZBWMRFQJGASILKAIJF47Q/
+         >>> 找到關鍵字 "爆炸"; 文章資訊: 2020-09-30 23:24:00, 神祕巨響驚動全巴黎網友炸鍋法警方戰鬥機音爆啦, https://tw.appledaily.com/international/20200930/J6FAVUAAMFG6XB3FRTCCEUOWTE/
+         <<< 2020-10-01 沒有更多 "爆炸" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"新興"; 網址:"https://tw.appledaily.com/search/新興/"
+      **** something wrong!! Restart it!! ****
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"爆裂物"; 網址:"https://tw.appledaily.com/search/爆裂物/"
+         <<< 2020-10-01 沒有更多 "爆裂物" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"IED"; 網址:"https://tw.appledaily.com/search/IED/"
+         >>> 找到關鍵字 "IED"; 文章資訊: 2020-10-01 07:20:00, 獨家參賽世界盃搶365兆醫療口罩大餅台灣印刷雙龍頭撩落去, https://tw.appledaily.com/life/20201001/NQPR5MRCNJDU7DRBAO5J5WUFHQ/
+         >>> 找到關鍵字 "IED"; 文章資訊: 2020-09-30 11:45:00, 獨家中部製鞋大廠再傳染疫緬甸廠後印尼廠員工染病回台, https://tw.appledaily.com/property/20200930/K75VACYUEVETXI5QDU6PNDXFLM/
+         <<< 2020-10-01 沒有更多 "IED" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"排放"; 網址:"https://tw.appledaily.com/search/排放/"
+      **** something wrong!! Restart it!! ****
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"污染"; 網址:"https://tw.appledaily.com/search/污染/"
+         >>> 找到關鍵字 "污染"; 文章資訊: 2020-09-30 22:45:00, 秋節瘋烤肉蝦蟹蚌殼廚餘不發臭北市環保局撇步告訴你, https://tw.appledaily.com/life/20200930/HMRTIML47BBADDEVEABPTM4AQA/
+         >>> 找到關鍵字 "污染"; 文章資訊: 2020-09-30 17:48:00, 中秋連假留意空品西半部局部地區恐達紅害等級, https://tw.appledaily.com/life/20200930/OJCZEU2E7ZDFVKOUQC76BSIIBE/
+         <<< 2020-10-01 沒有更多 "污染" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"廢水"; 網址:"https://tw.appledaily.com/search/廢水/"
+         <<< 2020-10-01 沒有更多 "廢水" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"污水"; 網址:"https://tw.appledaily.com/search/污水/"
+         >>> 找到關鍵字 "污水"; 文章資訊: 2020-10-01 00:00:00, 全國首創羅東夜市污水促參系統完工, https://tw.appledaily.com/headline/20201001/YBQHSWI6XRGUFMTH4WHHMTLFSI/
+         >>> 找到關鍵字 "污水"; 文章資訊: 2020-09-30 14:08:00, 全台首座羅東夜市完成污水接管宜縣府獲金擘獎, https://tw.appledaily.com/life/20200930/2AVSM7SITBHVJF4TC6CAJKEJ24/
+         <<< 2020-10-01 沒有更多 "污水" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"洩漏"; 網址:"https://tw.appledaily.com/search/洩漏/"
+         <<< 2020-10-01 沒有更多 "洩漏" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"暗管"; 網址:"https://tw.appledaily.com/search/暗管/"
+      **** something wrong!! Restart it!! ****
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"偷排"; 網址:"https://tw.appledaily.com/search/偷排/"
+         <<< 2020-10-01 沒有更多 "偷排" 相關的新聞 !!! >>>
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"安全"; 網址:"https://tw.appledaily.com/search/安全/"
+  ------------------------------------------------------
+    >> 搜尋關鍵字:"槽車"; 網址:"https://tw.appledaily.com/search/槽車/"
+         >>> 找到關鍵字 "槽車"; 文章資訊: 2020-10-01 00:00:00, 槽車撞國道護欄墜地爆炸, https://tw.appledaily.com/headline/20201001/TB7HDXCVHRFP3DBVQ6EZHOZQEU/
+         >>> 找到關鍵字 "槽車"; 文章資訊: 2020-09-30 22:04:00, 槽車墜匣道氫氣遇空氣易燃居民被爆炸聲驚醒比921大, https://tw.appledaily.com/local/20200930/3JHYKKCN3FEBPDWHZU5CYAZWJE/
+         >>> 找到關鍵字 "槽車"; 文章資訊: 2020-09-30 21:47:00, 影片曝光氫氣槽車墜國道20米駕駛慘死爆炸5次火光四射震波衝擊2公里外, https://tw.appledaily.com/local/20200930/6H23IZA3YBFTXJBCHGWR4CSA5Q/
+         >>> 找到關鍵字 "槽車"; 文章資訊: 2020-09-30 16:14:00, 槽車墜匝道死亡彎道國道彰化系統交流道長下坡誘加速易過彎翻車, https://tw.appledaily.com/local/20200930/LYQTRBK67FHPRITICRIZQNBP74/
+         >>> 找到關鍵字 "槽車"; 文章資訊: 2020-10-01 00:00:00, 長下坡越開越快死亡彎道易翻車, https://tw.appledaily.com/headline/20201001/PBYAQY2HE5DX7E7MZ3JRWCAXN4/
+         >>> 找到關鍵字 "槽車"; 文章資訊: 2020-10-01 00:00:00, 遭踢爆爽拿8千車馬費高鐵董座不再領了, https://tw.appledaily.com/headline/20201001/DMHK5WUEORENRAB4ZK3DF2XKYY/
+         >>> 找到關鍵字 "槽車"; 文章資訊: 2020-10-01 00:00:00, 地震全台有感僅北市收警報, https://tw.appledaily.com/headline/20201001/3KF6LZBWMRFQJGASILKAIJF47Q/
+         <<< 2020-10-01 沒有更多 "槽車" 相關的新聞 !!! >>>
+       >> 檔案輸出
+        ------------------------------------------------------
+      >> 下載新聞內容
+      >> 下載 https://tw.appledaily.com/headline/20201001/TB7HDXCVHRFP3DBVQ6EZHOZQEU/, 槽車撞國道護欄墜地爆炸
+      >> 下載 https://tw.appledaily.com/headline/20201001/TB7HDXCVHRFP3DBVQ6EZHOZQEU/, 槽車撞國道護欄墜地爆炸
+      >> 下載 https://tw.appledaily.com/international/20200930/NPUQK2PINVFENF7YC72VS4IIC4/, 港國安法衛報臉書谷歌等公司恐已向港府透露用戶資料
+      >> 下載 https://tw.appledaily.com/life/20200930/7K3LHFEUI5HWHBDT6NENXVL32A/, 電子煙恐致癌甚至致命醫師霧化器加熱會釋放毒金屬
+      >> 下載 https://tw.appledaily.com/sports/20200930/C7FIDP4BEBHTRJBWVLCBQ7DF44/, NBA暖心庫班再出招找到威斯特還出錢讓他入院治療
+      >> 下載 https://tw.appledaily.com/local/20200930/6X6JATS34NGSZAFKSJ467XOIWY/, 獨家嚼菸禁令1王建民郭泓志都嚼過味全龍教練違法販賣判罰百萬
+      >> 下載 https://tw.appledaily.com/supplement/20200930/3MW3KGHLR5DZBD6U7FQ34FOQWU/, TCRC蘇格蘭沒有蛋超吸睛統一麵變化料理台南花園夜市開賣
+      >> 下載 https://tw.appledaily.com/local/20200930/UZFLXE6QKVFL3JJCPCI4YJLFDM/, 嚼菸禁令5菸商促銷沒燃燒低危害榮總醫曝真相
+      >> 下載 https://tw.appledaily.com/sports/20200929/CUVYQMZYP5AEVKDCJF3X55BSLQ/, 嚼菸禁令4MLB名人堂球星因它罹癌過世大聯盟今年下令禁嚼
+      >> 下載 https://tw.appledaily.com/life/20200930/GBRW4CY46FHRVHSP6AAGIG6YG4/, 柯文哲邀蔣萬安吃飯促藍白合陳時中我現在沒時間想這件事
+      >> 下載 https://tw.appledaily.com/sports/20200930/KNW52HSWEREURDPWN5MQAMAZXA/, 嚼菸禁令3洋將帶進風氣教練球員愛嚼到了球場就想吃
+      >> 下載 https://tw.appledaily.com/life/20200930/7K3LHFEUI5HWHBDT6NENXVL32A/, 電子煙恐致癌甚至致命醫師霧化器加熱會釋放毒金屬
+      >> 下載 https://tw.appledaily.com/life/20201001/SJAZI3LXRVGXPFZ6SHZ4R4RFZI/, 未來肉植物肉仿真添油增風險醫建議低溫少油烹調是健康關鍵
+      >> 下載 https://tw.appledaily.com/life/20201001/RSJPLYG4SRDKFBSOKVP6HY3KIE/, 秋節瘋烤肉豬里肌肉文蛤最夯營養師配生菜吃少加奶油
+      >> 下載 https://tw.appledaily.com/supplement/20201001/RLB6NC5JMRGL3IX7GANZBAFM6Y/, 新開店〡大馬女孩賣椰漿飯香料炸雞味飄香
+      >> 下載 https://tw.appledaily.com/life/20201001/RSJPLYG4SRDKFBSOKVP6HY3KIE/, 秋節瘋烤肉豬里肌肉文蛤最夯營養師配生菜吃少加奶油
+      >> 下載 https://tw.appledaily.com/supplement/20201001/3NR5I5XGERARTKUHKZUY4RBDD4/, 新開店教堂打造餐酒館好拍好吃食趣破表
+      >> 下載 https://tw.appledaily.com/sports/20200930/KNW52HSWEREURDPWN5MQAMAZXA/, 嚼菸禁令3洋將帶進風氣教練球員愛嚼到了球場就想吃
+      >> 下載 https://tw.appledaily.com/life/20201001/FEGHTU4SRNFXNNNQUQKWF7AIHU/, 未來肉不怕瘦肉精美豬亂胃蘋果實測嘗鮮植物肉肉丸乾硬肉排清爽
+      >> 下載 https://tw.appledaily.com/life/20201001/SJAZI3LXRVGXPFZ6SHZ4R4RFZI/, 未來肉植物肉仿真添油增風險醫建議低溫少油烹調是健康關鍵
+      >> 下載 https://tw.appledaily.com/life/20200930/7K3LHFEUI5HWHBDT6NENXVL32A/, 電子煙恐致癌甚至致命醫師霧化器加熱會釋放毒金屬
+      >> 下載 https://tw.appledaily.com/local/20201001/HLNR35HGXFHDLGPFHEKUJZPXW4/, 鐵皮紙廠整棟噴火延燒2戶3口之家嗆醒驚逃
+      >> 下載 https://tw.appledaily.com/headline/20201001/TB7HDXCVHRFP3DBVQ6EZHOZQEU/, 槽車撞國道護欄墜地爆炸
+      >> 下載 https://tw.appledaily.com/local/20200930/3JHYKKCN3FEBPDWHZU5CYAZWJE/, 槽車墜匣道氫氣遇空氣易燃居民被爆炸聲驚醒比921大
+      >> 下載 https://tw.appledaily.com/local/20200930/6H23IZA3YBFTXJBCHGWR4CSA5Q/, 影片曝光氫氣槽車墜國道20米駕駛慘死爆炸5次火光四射震波衝擊2公里外
+      >> 下載 https://tw.appledaily.com/headline/20201001/PBYAQY2HE5DX7E7MZ3JRWCAXN4/, 長下坡越開越快死亡彎道易翻車
+      >> 下載 https://tw.appledaily.com/entertainment/20201001/M3X7NFPWRNAEDGOOEQLTIHVBOA/, 馬志翔被尿噴解鎖新奶爸拜師張孝全
+      >> 下載 https://tw.appledaily.com/headline/20201001/DMHK5WUEORENRAB4ZK3DF2XKYY/, 遭踢爆爽拿8千車馬費高鐵董座不再領了
+      >> 下載 https://tw.appledaily.com/entertainment/20201001/Q2UK5Q53URF6FKLYNMAARRJQII/, KellyTalk小S合體3女兒登封比美點名許老三最自戀
+      >> 下載 https://tw.appledaily.com/headline/20201001/3KF6LZBWMRFQJGASILKAIJF47Q/, 地震全台有感僅北市收警報
+      >> 下載 https://tw.appledaily.com/international/20200930/J6FAVUAAMFG6XB3FRTCCEUOWTE/, 神祕巨響驚動全巴黎網友炸鍋法警方戰鬥機音爆啦
+      >> 下載 https://tw.appledaily.com/life/20201001/NQPR5MRCNJDU7DRBAO5J5WUFHQ/, 獨家參賽世界盃搶365兆醫療口罩大餅台灣印刷雙龍頭撩落去
+      >> 下載 https://tw.appledaily.com/property/20200930/K75VACYUEVETXI5QDU6PNDXFLM/, 獨家中部製鞋大廠再傳染疫緬甸廠後印尼廠員工染病回台
+      >> 下載 https://tw.appledaily.com/life/20200930/HMRTIML47BBADDEVEABPTM4AQA/, 秋節瘋烤肉蝦蟹蚌殼廚餘不發臭北市環保局撇步告訴你
+      >> 下載 https://tw.appledaily.com/life/20200930/OJCZEU2E7ZDFVKOUQC76BSIIBE/, 中秋連假留意空品西半部局部地區恐達紅害等級
+      >> 下載 https://tw.appledaily.com/headline/20201001/YBQHSWI6XRGUFMTH4WHHMTLFSI/, 全國首創羅東夜市污水促參系統完工
+      >> 下載 https://tw.appledaily.com/life/20200930/2AVSM7SITBHVJF4TC6CAJKEJ24/, 全台首座羅東夜市完成污水接管宜縣府獲金擘獎
+      >> 下載 https://tw.appledaily.com/headline/20201001/TB7HDXCVHRFP3DBVQ6EZHOZQEU/, 槽車撞國道護欄墜地爆炸
+      >> 下載 https://tw.appledaily.com/local/20200930/3JHYKKCN3FEBPDWHZU5CYAZWJE/, 槽車墜匣道氫氣遇空氣易燃居民被爆炸聲驚醒比921大
+      >> 下載 https://tw.appledaily.com/local/20200930/6H23IZA3YBFTXJBCHGWR4CSA5Q/, 影片曝光氫氣槽車墜國道20米駕駛慘死爆炸5次火光四射震波衝擊2公里外
+      >> 下載 https://tw.appledaily.com/local/20200930/LYQTRBK67FHPRITICRIZQNBP74/, 槽車墜匝道死亡彎道國道彰化系統交流道長下坡誘加速易過彎翻車
+      >> 下載 https://tw.appledaily.com/headline/20201001/PBYAQY2HE5DX7E7MZ3JRWCAXN4/, 長下坡越開越快死亡彎道易翻車
+      >> 下載 https://tw.appledaily.com/headline/20201001/DMHK5WUEORENRAB4ZK3DF2XKYY/, 遭踢爆爽拿8千車馬費高鐵董座不再領了
+      >> 下載 https://tw.appledaily.com/headline/20201001/3KF6LZBWMRFQJGASILKAIJF47Q/, 地震全台有感僅北市收警報

@@ -1,0 +1,926 @@
+import copy, os, sys, random, time, requests, platform, datetime, re
+import pandas as pd
+from bs4 import BeautifulSoup
+from configparser import ConfigParser
+from pathlib import Path
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+pd.set_option('display.unicode.east_asian_width',True)
+pd.set_option('display.unicode.ambiguous_as_wide',True)
+
+
+''' ------------------------------------------------------------'''
+'''              讀取系統名稱，並載入自定義工具                 '''
+''' ------------------------------------------------------------'''
+
+osName = platform.platform().split('-')[0]
+
+if osName == 'Windows':
+    # sys.path.append('S:\\TV\\N332-NewsSearch-Simenvi\\pythonCode')
+    # sys.path.append('C:\Users\jijen\GD_simenvi\SimEnvi\Project\109E10_ChemCloud\For_deploy\pythonCode')
+    sys.path.append("C:\\Users\\jijen\\GD_simenvi\\SimEnvi\\Project\\109E10_ChemCloud\\For_deploy\\pythonCode")
+elif osName == 'Darwin':
+    sys.path.append('/Users/jen/GD_simenvi/SimEnvi/Project/109E10_ChemCloud/For_deploy/pythonCode')
+else:
+    print('不屬於上述任何環境，後續可能有問題，也可能沒有')
+
+from SimenviPythonTool.tool.show   import show
+from SimenviPythonTool.module.path import path
+
+show(f'--------------------------', level=0, sign='')
+show(f'目前執行系統環境：{osName}', level=0, sign='')
+show(f'--------------------------', level=0, sign='', nla=True)
+
+
+
+
+''' ------------------------------------------------------------'''
+'''                     其他設定                                '''
+''' ------------------------------------------------------------'''
+pd.options.mode.chained_assignment = None  # default='warn'
+
+
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'}
+
+
+
+''' ------------------------------------------------------------'''
+'''                     共用函數                                '''
+''' ------------------------------------------------------------'''
+
+def wait():
+    waittime = random.uniform(1,5)
+    show(f'等待時間:{waittime}', level=2)
+    time.sleep(waittime)
+
+
+class NameList(path):
+    def __init__(self):
+        super(NameList, self).__init__()
+        self._NewsTable()
+        self._outputName()
+        self._columnNames()
+ 
+    def _NewsTable(self):
+        self.newsTable = {'自由時報電子報'   :'LibertyTimesNet'
+                         ,'中國時報電子報'   :'chinaTimes'
+                         ,'農傳媒'           :'agriharvest'
+                         ,'聯合新聞網'       :'udn'
+                         ,'蘋果日報'         :'AppleDaily'
+                         ,'中央通訊社'       :'CNA'
+                         ,'美國紐約時報'     :'NYTimes'
+                         ,'European_Commission' : 'European_Commission'
+                         ,'US_FDA'           :'us_fda'
+                         }
+
+
+    def _outputName(self):
+        nameByNewsDate = {}
+        for name in self.newsTable:
+            nameByNewsDate[name]    = self.fullPath_crawNews.replace('NEWS', self.newsTable[name])
+            dirname = os.path.dirname(nameByNewsDate[name])
+            if not os.path.isdir(dirname):
+                show(f'{dirname} 不存在。建立資料夾。')
+                os.mkdir(dirname)
+        self.nameByNewsDate = nameByNewsDate
+
+    def _columnNames(self):
+        self.columns = ['關鍵字', '標題', '網站', '發布日期時間', '網址', '內文']
+
+class readKeyWord(NameList):
+    def __init__(self):
+        super(readKeyWord, self).__init__()
+        self._read()
+
+    def _read(self):
+        self.keywords = pd.read_excel(self.fullPath_SrchWord)['word'].values
+
+class readKeyWordEng(NameList):
+    def __init__(self):
+        super(readKeyWordEng, self).__init__()
+        self._read()
+
+    def _read(self):
+        self.keywords = pd.read_excel(self.fullPath_SrchWordEng).dropna()['keyword'].values
+
+class downloadNewsText(NameList):
+    '''
+        依據爬蟲之內容所提供的網址，下載本文。
+        不和爬蟲的過程放在同一支程式的原因在於
+        1. 此部分很容易被阻擋
+        2. 共用性高
+    '''
+    def __init__(self, NewsName, whichday):
+        super(downloadNewsText, self).__init__()
+        self.Time       = pd.to_datetime(whichday).strftime('%Y-%m-%d')
+        self.NewsName   = NewsName
+        self._name()
+        self._downloadText()
+
+    def _name(self):
+        self.nameByNewsDate = self.nameByNewsDate[self.NewsName].replace('TIME', self.Time)
+
+    def _dataProcess(self):
+        data = pd.read_excel(self.nameByNewsDate)
+        data = data.fillna('')
+        return data
+
+    def _downloadText(self):
+        show('------------------------------------------------------', level=1, sign='')
+        show('下載新聞內容')
+
+        data = self._dataProcess()
+        content = data['內文']
+        html = None
+        url = None
+        for i,news in data.iterrows():
+            #if i >1: continue
+            if content[i] != '':
+                continue
+            url = news['網址']
+            NewsText = news['標題'].replace('\r', '')
+            show(f'下載 {url}, {NewsText}')
+            try:
+                wait()
+                html = requests.get(url, headers=headers)
+                html = BeautifulSoup(html.text, features='lxml')
+            except:
+                show('**** something wrong!! Restart it!! ****', level=1)
+
+            text = self._method(html, url)
+            content[i] = text
+            data['內文'] = content
+            #Try:
+            #    Time = html.find('time')['datetime']
+            #Except:
+            #    pass
+            #Data['發布日期時間'] = Time 
+            data.to_excel(self.nameByNewsDate, index=False)
+        self.html = html
+        self.url = url
+        self.data = data
+
+    def _method(self, html, url):
+        text = None
+        if self.NewsName == '農傳媒': 
+            # need being modified
+            text = html.find_all('div', 
+                    {'class' :'tdb-block-inner td-fix-index'})
+            if text is not None and len(text) >=5:
+                text = text[5].text
+            else:
+                show('找不到新聞內容，可能是新聞的格式不同所致。')
+                text = None
+
+        elif self.NewsName == '中央通訊社':
+            text = html.select_one('article  div.centralContent').text 
+
+        elif self.NewsName == '自由時報電子報':
+            method = {'name'     : 'div',
+                      'attrs'    : {'itemprop':'articleBody'} }
+            text = html.find(**method)
+
+            if text is not None:
+                text = text.find_all('p')
+                text = ''.join([i.text for i in text])
+            else:
+                show('找不到新聞內容，可能是新聞的格式不同所致。')
+                text = None
+			
+        elif self.NewsName == '中國時報電子報':
+            method = {'name'     : 'div',
+                      'attrs'    : {'class':'article-body'} }
+            text = html.find(**method)
+            if text is not None:
+                text = text.text
+            else:
+                show('找不到新聞內容，可能是新聞的格式不同所致。')
+                text = None
+
+        elif self.NewsName == '聯合新聞網':
+            if url.split('//')[1].split('.')[0] == 'udn':
+                method = {'name'     : 'article',
+                          'attrs'    : {'class':'article-content'} }
+            elif url.split('//')[1].split('.')[0] == 'health':
+                method = {'name'     : 'div',
+                          'attrs'    : {'id':'story_body_content'} }
+            elif url.split('//')[1].split('.')[0] == 'stype':
+                method = {'name'     : 'div',
+                          'attrs'    : {'id':'con'} }
+            elif url.split('//')[1].split('.')[0] == 'house':
+                method = {'name'     : 'div',
+                          'attrs'    : {'id':'story_body_content'} }
+            else:
+                method = {'name'     : None,
+                          'attrs'    : {'id':None} }
+                
+            text = html.find(**method)
+            if text is not None:
+                text = text.text
+                text = text.replace('\n', ' ')
+            else:
+                show('找不到新聞內容，可能是新聞的格式不同所致。')
+                text = None
+
+        elif self.NewsName == '蘋果日報':
+            method = {'name'     : 'div',
+                      'attrs'    : {'class':'ndArticle_contentBox'} }
+            text = html.find(**method)
+
+            if text is not None:
+                text = text.find_all('p')
+                text = ''.join([i.text for i in text])
+            else:
+                show('找不到新聞內容，可能是新聞需要付費。')
+                text = None
+        elif self.NewsName == '美國紐約時報':
+            method = {'name'     : 'section',
+                      'attrs'    : {'itemprop':'articleBody'} }
+            text = html.find(**method)
+
+            if text is not None:
+                text = text.find_all('p')
+                text = ' '.join([i.text for i in text])
+            else:
+                show('找不到新聞內容，可能是新聞的格式不同所致。')
+                text = None
+
+
+        if text is not None:
+            text = re.sub('\s+|\r|\t|\n', ' ', text)
+        return text
+
+
+
+class WebDriver():
+    '''
+        啟動selenium開啟瀏覽器
+    '''
+    def __init__(self):
+        self._run()
+
+    def _run(self):
+        headers = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3429.49 Safari/537.36'
+
+        profile = webdriver.FirefoxProfile()
+        profile.set_preference("general.useragent.override", headers)
+        self.driver = webdriver.Firefox(profile, executable_path='./geckodriver')
+
+    def _wait(self, By, element):
+        try:
+            element = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By, element))
+            )
+        finally:
+            self.driver.quit()
+'''
+    以下為各家電子新聞之函數
+''' 
+
+class CNA(readKeyWord, WebDriver, NameList):
+    def __init__(self, whichday):
+        self.Name = '中央通訊社'
+        self.whichday = whichday
+        super(readKeyWord       , self).__init__()
+        super(WebDriver         , self).__init__()
+        super(CNA               , self).__init__()
+
+        self._dataURL()
+        self._processDate()
+        self._getKeywordNews()
+
+    def _dataURL(self):
+        self.website = 'https://www.cna.com.tw/search/hysearchws.aspx?q=KEYWORD'
+
+    def _processDate(self):
+        self.whichday = pd.to_datetime(self.whichday)
+
+    def _getKeywordNews(self):
+        print(f' <<< 自由時報電子報新聞搜尋 >>>')
+        print('  ------------------------------------------------------')
+        self.data = pd.DataFrame(columns = self.columns)
+        for keyword in self.keywords[:]:
+            for page in range(1, 2):
+                website = copy.deepcopy(self.website)
+                website = website.replace('KEYWORD', keyword  )
+                print('  ------------------------------------------------------')
+                print(f'    >> 搜尋關鍵字:"{keyword}"; 網址:"{website}"')
+                try:
+                    self.driver.get(website) #前往這個網址
+                except:
+                    print('      **** something wrong!! Restart it!! ****')
+                    WebDriver.__init__(self)
+                    self.driver.implicitly_wait(30)
+                    break
+                nextPage = self._getKeywordNews_sub(keyword)
+                if not nextPage:
+                    break
+
+        data = self.data.reset_index().drop('index', axis=1)
+        self.data = data
+
+        print('    >> 檔案輸出')
+        Time = self.whichday.strftime('%Y-%m-%d')
+        nameByNewsDate = self.nameByNewsDate[self.Name].replace('TIME', Time)
+        self.data.to_excel(nameByNewsDate, index=False)
+
+
+    def _getKeywordNews_sub(self, keyword):
+        self.driver.implicitly_wait(30)
+        newsBox = self.driver.find_element(By.CSS_SELECTOR, 'div.centralContent  #jsMainList')
+        self.newsList = newsList = newsBox.find_elements(By.CSS_SELECTOR, 'li')
+
+        nextPage = True
+        for inews in newsList[:]:
+
+            Time  = inews.find_element(By.CSS_SELECTOR, 'li a div div').text
+            newsTime = pd.to_datetime(Time)
+            if newsTime.date() != self.whichday.date():
+                print(f'''    <<< {self.whichday.strftime('%Y/%m/%d')} 沒有更多 "{keyword}" 相關的新聞 !!! >>>''')
+                nextPage = False
+                break
+
+            title = inews.find_element(By.CSS_SELECTOR, 'li a').text
+            url   = inews.find_element(By.CSS_SELECTOR, 'li a').get_attribute('href')
+            print(f'     >>>> 找到關鍵字 "{keyword}"; 文章資訊: {newsTime}, {title}, {url}')
+            data = [[keyword, title, '中央通訊社', newsTime, url, '']]
+            data = pd.DataFrame(data, columns=self.columns)
+            self.data = self.data.append(data)
+        return nextPage
+
+class LibertyTimesNet(readKeyWord, NameList):
+    def __init__(self, whichday):
+        self.Name = '自由時報電子報'
+        self.whichday = whichday
+        super(LibertyTimesNet   , self).__init__()
+        super(readKeyWord       , self).__init__()
+
+        self._URL()
+        self._processDate()
+        self._getKeywordNews()
+
+    def _URL(self):
+        self.website = 'https://news.ltn.com.tw/search?keyword=KEYWORD&conditions=and&start_time=TS&end_time=TE&page=PAGE'
+ 
+    def _processDate(self):
+        self.whichday      = pd.to_datetime(self.whichday)
+        self.whichdayStart = pd.to_datetime(self.whichday)
+        self.whichdayEnd   = pd.to_datetime(self.whichday) + pd.Timedelta(days=90)
+
+    def _getKeywordNews(self):
+        show(f'<<< {self.Name}新聞搜尋 >>>', sign='', level=4, nlb=True)
+        show('------------------------------------------------------', level=1, sign='')
+        self.data = pd.DataFrame(columns = self.columns)
+        for keyword in self.keywords[:]:
+            for page in range(1, 2):
+                website = copy.deepcopy(self.website)
+                website = website.replace('KEYWORD', keyword  )
+                website = website.replace('PAGE'   , str(page))
+                website = website.replace('TS'     , self.whichdayStart.strftime('%Y-%m-%d'))
+                website = website.replace('TE'     , self.whichdayEnd.strftime('%Y-%m-%d'))
+                show('------------------------------------------------------', level=1, sign='')
+                show(f'搜尋關鍵字:"{keyword}"; 網址:"{website}"', level=1)
+                try:
+                    self._getInfo(website) 
+                except:
+                    show('**** something wrong!! Restart it!! ****', level=1)
+                    break
+                nextPage = self._getKeywordNews_sub(keyword)
+                if not nextPage:
+                    break
+
+        data = self.data.reset_index().drop('index', axis=1)
+        self.data = data
+
+        show('檔案輸出', level=1)
+        Time = self.whichdayStart.strftime('%Y-%m-%d')
+        nameByNewsDate = self.nameByNewsDate[self.Name].replace('TIME', Time)
+        self.data.to_excel(nameByNewsDate, index=False)
+
+    def _getInfo(self, website):
+        wait()
+        html = requests.get(website, headers=headers)
+        html = BeautifulSoup(html.text, features='lxml')
+        self.html = html
+
+    def _getKeywordNews_sub(self, keyword):
+        newsBox = self.html.find_all('ul', {'class': 'searchlist boxTitle'})
+        if len(newsBox) != 1:
+            show('get more than 1 element. Please confirm.')
+            return
+
+        show('Every thing goes well')
+        self.newsList = newsList = newsBox[0].find_all('li')
+
+        nextPage = True
+        for inews in newsList[:]:
+            
+            Time  = inews.find('span').text
+            newsTime = pd.to_datetime(Time) 
+            if newsTime.date() < self.whichdayStart.date():
+                show(f'''<<< {self.whichdayStart.strftime('%Y/%m/%d')} 沒有更多 "{keyword}" 相關的新聞 !!! >>>''', level=2, sign='')
+                nextPage = False
+                break
+
+            title = inews.find('a').text
+            url   = inews.find('a')['href']
+            show(f'找到關鍵字 "{keyword}"; 文章資訊: {newsTime}, {title}, {url}', level=3)
+            data = [[keyword, title, '自由時報電子報', newsTime, url, '']]
+            data = pd.DataFrame(data, columns=self.columns)
+            self.data = self.data.append(data)
+        return nextPage
+
+class ChinaTimes(readKeyWord, NameList):
+    def __init__(self, whichday):
+        self.Name = '中國時報電子報'
+        self.whichday = whichday
+        super(readKeyWord       , self).__init__()
+        super(ChinaTimes        , self).__init__()
+
+        self._URL()
+        self._processDate()
+        self._getKeywordNews()
+
+    def _URL(self):
+        self.website = 'https://www.chinatimes.com/search/KEYWORD?page=PAGE&chdtv'
+
+    def _processDate(self):
+        self.whichday = pd.to_datetime(self.whichday)
+
+    def _getKeywordNews(self):
+        show(f'<<< {self.Name}新聞搜尋 >>>', level=4, sign='', nlb=True)
+        show('------------------------------------------------------', level=1, sign='')
+        self.data = pd.DataFrame(columns = self.columns)
+        for keyword in self.keywords[:]:
+            for page in range(1, 2):
+                website = copy.deepcopy(self.website)
+                website = website.replace('KEYWORD', keyword  )
+                website = website.replace('PAGE'   , str(page))
+                show('------------------------------------------------------', level=1, sign='')
+                show(f'搜尋關鍵字:"{keyword}"; 網址:"{website}"', level=1)
+                try:
+                    self._getInfo(website)
+                except:
+                    show('**** something wrong!! Restart it!! ****', level=1)
+                    break
+                nextPage = self._getKeywordNews_sub(keyword)
+                if not nextPage:
+                    break
+
+        data = self.data.reset_index().drop('index', axis=1)
+        self.website = website
+        self.data = data
+
+        show('檔案輸出', level=1)
+        Time = self.whichday.strftime('%Y-%m-%d')
+        nameByNewsDate = self.nameByNewsDate[self.Name].replace('TIME', Time)
+        self.fileNameTrue = nameByNewsDate
+        self.data.to_excel(nameByNewsDate, index=False)
+
+    def _getInfo(self, website):
+        #wait()
+        html = requests.get(website, headers=headers)
+        html = BeautifulSoup(html.text, features='lxml')
+        self.html = html
+
+    def _getKeywordNews_sub(self, keyword):
+        newsBox = self.html.find_all('ul', {'class':'vertical-list list-style-none'})
+        if len(newsBox) != 1:
+            show('get more than 1 element. Please confirm.')
+            return
+        self.newsBox = newsBox
+        self.newsList = newsList = newsBox[0].find_all('li')
+
+        nextPage = True
+        for inews in newsList[:]:
+            # 僅挑選當日的新聞，如果第一篇不是，後面就都是更早的新聞。
+            Time  = inews.find('time').text
+            newsTime = pd.to_datetime(Time,  format='%H:%M%Y/%m/%d') #10:002020/04/16
+            if newsTime.date() < self.whichday.date():
+                show(f'''<<< {self.whichday.strftime('%Y/%m/%d')} 沒有更多 "{keyword}" 相關的新聞 !!! >>>''', level=2, sign='')
+                nextPage = False
+                break
+            title = inews.find('h3').text
+
+            url   = inews.find('a')['href']
+            show(f'找到關鍵字 "{keyword}"; 文章資訊: {newsTime}, {title}, {url}', level=3)
+            data = [[keyword, title, '中時電子報', newsTime, url, '']]
+            data = pd.DataFrame(data, columns=self.columns)
+            self.data = self.data.append(data)
+        return nextPage
+
+class Agriharvest(readKeyWord, NameList):
+    def __init__(self, whichday):
+        self.Name = '農傳媒'
+        self.whichday = whichday
+        super(readKeyWord      , self).__init__()
+        super(Agriharvest      , self).__init__()
+
+        self._URL()
+        self._processDate()
+        self._getKeywordNews()
+
+    def _URL(self):
+        self.website = 'https://agriharvest.tw/page/PAGE?s=KEYWORD'
+
+    def _processDate(self):
+        self.whichday = pd.to_datetime(self.whichday)
+
+    def _getKeywordNews(self):
+        show(f'<<< {self.Name}新聞搜尋 >>>', sign='', level=4, nlb=True)
+        show('------------------------------------------------------', level=1, sign='')
+        self.data = pd.DataFrame(columns = self.columns)
+        for keyword in self.keywords[:]:
+            for page in range(1, 2):
+                website = copy.deepcopy(self.website)
+                website = website.replace('KEYWORD', keyword  )
+                website = website.replace('PAGE'   , str(page))
+                show('------------------------------------------------------', level=1, sign='')
+                show(f'搜尋關鍵字:"{keyword}"; 網址:"{website}"', level=1)
+                try:
+                    self._getInfo(website)
+                except:
+                    show('**** something wrong!! Restart it!! ****', level=1)
+                    break
+                nextPage = self._getKeywordNews_sub(keyword)
+                if not nextPage:
+                    break
+
+        data = self.data.reset_index().drop('index', axis=1)
+        self.website = website
+        self.data = data
+
+        show('檔案輸出', level=1)
+        Time = self.whichday.strftime('%Y-%m-%d')
+        nameByNewsDate = self.nameByNewsDate[self.Name].replace('TIME', Time)
+        self.fileNameTrue = nameByNewsDate
+        self.data.to_excel(nameByNewsDate, index=False)
+
+    def _getInfo(self, website):
+        wait()
+        html = requests.get(website, headers=headers)
+        html = BeautifulSoup(html.text, features='lxml')
+        self.html = html
+
+    def _getKeywordNews_sub(self, keyword):
+        newsBox = self.html.find_all('div', {'class':'td-ss-main-content'})
+        if len(newsBox) != 1:
+            show('get more than 1 element. Please confirm.')
+            return
+        self.newsBox = newsBox
+        self.newsList = newsList = newsBox[0].find_all('div', {'class' : 'td-block-span4'})
+
+        nextPage = True
+        for inews in newsList[:]:
+            # 僅挑選當日的新聞，如果第一篇不是，後面就都是更早的新聞。
+            Time = inews.find('time')['datetime']
+            newsTime = pd.to_datetime(Time).tz_localize(None)
+            self.newsTime = newsTime
+            #return False
+            if newsTime < self.whichday:
+                show(f'''<<< {self.whichday.strftime('%Y/%m/%d')} 沒有更多 "{keyword}" 相關的新聞 !!! >>>''', level=2, sign='')
+                nextPage = False
+                break
+            title = inews.find('h3').text
+
+            url   = inews.find('h3').find('a')['href']
+            show(f'找到關鍵字 "{keyword}"; 文章資訊: {newsTime}, {title}, {url}', level=3)
+            data = [[keyword, title, self.Name, newsTime, url, '']]
+            data = pd.DataFrame(data, columns=self.columns)
+            self.data = self.data.append(data)
+        return nextPage
+
+
+class UDN(readKeyWord, NameList):
+    def __init__(self, whichday):
+        self.Name = '聯合新聞網'
+        self.whichday = whichday
+        super(readKeyWord   , self).__init__()
+        super(UDN           , self).__init__()
+
+        self._URL()
+        self._processDate()
+        self._getKeywordNews()
+
+    def _URL(self):
+        self.website = 'https://udn.com/search/word/2/KEYWORD'
+
+    def _processDate(self):
+        self.whichday = pd.to_datetime(self.whichday)
+
+    def _getKeywordNews(self):
+        show(f'<<< {self.Name}新聞搜尋 >>>', sign='', level=4, nlb=True)
+        show('------------------------------------------------------', level=1, sign='')
+        self.data = pd.DataFrame(columns = self.columns)
+        for keyword in self.keywords[:]:
+            for page in range(1, 2):
+                website = copy.deepcopy(self.website)
+                website = website.replace('KEYWORD', keyword  )
+                website = website.replace('PAGE'   , str(page))
+                show('------------------------------------------------------', level=1, sign='')
+                show(f'搜尋關鍵字:"{keyword}"; 網址:"{website}"', level=1)
+                try:
+                    self._getInfo(website)
+                except:
+                    show('**** something wrong!! Restart it!! ****', level=1)
+                    break
+                nextPage = self._getKeywordNews_sub(keyword)
+                if not nextPage:
+                    break
+
+        data = self.data.reset_index().drop('index', axis=1)
+        self.website = website
+        self.data = data
+
+        show('檔案輸出', level=1)
+        Time = self.whichday.strftime('%Y-%m-%d')
+        nameByNewsDate = self.nameByNewsDate[self.Name].replace('TIME', Time)
+        self.fileNameTrue = nameByNewsDate
+        self.data.to_excel(nameByNewsDate, index=False)
+
+    def _getInfo(self, website):
+        wait()
+        html = requests.get(website, headers=headers)
+        html = BeautifulSoup(html.text, features='lxml')
+        self.html = html
+
+    def _getKeywordNews_sub(self, keyword):
+        newsBox = self.html.find_all('div', {'class':'context-box__content story-list__holder story-list__holder--full'})
+        if len(newsBox) != 1:
+            show('get more than 1 element. Please confirm.')
+            return
+        self.newsBox = newsBox
+        self.newsList = newsList = newsBox[0].find_all('div', {'class' : 'story-list__news'})
+
+        nextPage = True
+        for inews in newsList[:]:
+            # 僅挑選當日的新聞，如果第一篇不是，後面就都是更早的新聞。
+            Time = inews.find('time').text
+            newsTime = pd.to_datetime(Time).tz_localize(None)
+            self.newsTime = newsTime
+            #return False
+            if newsTime < self.whichday:
+                show(f'''<<< {self.whichday.strftime('%Y/%m/%d')} 沒有更多 "{keyword}" 相關的新聞 !!! >>>''', level=2, sign='')
+                nextPage = False
+                break
+            title = inews.find('h2').find('a').text
+            url   = inews.find('h2').find('a')['href']
+            #url   = inews.find('div', {'class','story-list__info'}).find('a')['href']
+            title = title.replace('\n', '')
+            url   = url.replace('\n', '')
+
+            show(f'找到關鍵字 "{keyword}"; 文章資訊: {newsTime}, {title}, {url}', level=3)
+            data = [[keyword, title, self.Name, newsTime, url, '']]
+            data = pd.DataFrame(data, columns=self.columns)
+            self.data = self.data.append(data)
+        return nextPage
+
+
+class AppleDaily(readKeyWord, NameList):
+    def __init__(self, whichday):
+        self.Name = '蘋果日報'
+        self.whichday = whichday
+        super(readKeyWord   , self).__init__()
+        super(AppleDaily, self).__init__()
+
+        self._URL()
+        self._processDate()
+        self._getKeywordNews()
+
+    def _URL(self):
+        self.website = 'https://tw.appledaily.com/search/result?querystrS=KEYWORD'
+
+    def _processDate(self):
+        self.whichday = pd.to_datetime(self.whichday)
+
+    def _getKeywordNews(self):
+        show(f'<<< {self.Name}新聞搜尋 >>>', sign='', level=4, nlb=True)
+        show('------------------------------------------------------', level=1, sign='')
+        self.data = pd.DataFrame(columns = self.columns)
+        for keyword in self.keywords[:]:
+            for page in range(1, 2):
+                website = copy.deepcopy(self.website)
+                website = website.replace('KEYWORD', keyword  )
+                website = website.replace('PAGE'   , str(page))
+                show('------------------------------------------------------', level=1, sign='')
+                show(f'搜尋關鍵字:"{keyword}"; 網址:"{website}"', level=1)
+                try:
+                    self._getInfo(website)
+                except:
+                    show('**** something wrong!! Restart it!! ****', level=1)
+                    break
+                nextPage = self._getKeywordNews_sub(keyword)
+                if not nextPage:
+                    break
+
+        data = self.data.reset_index().drop('index', axis=1)
+        self.website = website
+        self.data = data
+
+        show('檔案輸出', level=1)
+        Time = self.whichday.strftime('%Y-%m-%d')
+        nameByNewsDate = self.nameByNewsDate[self.Name].replace('TIME', Time)
+        self.fileNameTrue = nameByNewsDate
+        self.data.to_excel(nameByNewsDate, index=False)
+
+    def _getInfo(self, website):
+        wait()
+        html = requests.get(website, headers=headers)
+        html = BeautifulSoup(html.text, features='lxml')
+        self.html = html
+
+    def _getKeywordNews_sub(self, keyword):
+        newsBox = self.html.find_all('div', {'id':'searchResult'})
+        if len(newsBox) != 1:
+            show('get more than 1 element. Please confirm.')
+            return
+        self.newsBox = newsBox
+        self.newsList = newsList = newsBox[0].select('li.item')
+
+        nextPage = True
+        for inews in newsList[:]:
+            # 僅挑選當日的新聞，如果第一篇不是，後面就都是更早的新聞。
+            Time = inews.find('time').text
+            newsTime = pd.to_datetime(Time).tz_localize(None)
+            self.newsTime = newsTime
+            #return False
+            if newsTime < self.whichday:
+                show(f'''<<< {self.whichday.strftime('%Y/%m/%d')} 沒有更多 "{keyword}" 相關的新聞 !!! >>>''', level=2, sign='')
+                nextPage = False
+                break
+            title = inews.find('h2').find('a').text
+            url   = inews.find('h2').find('a')['href']
+            #url   = inews.find('div', {'class','story-list__info'}).find('a')['href']
+            title = re.sub('\n|\s+', '', title)
+            url   = re.sub('\n|\s+', '', url)
+
+            show(f'找到關鍵字 "{keyword}"; 文章資訊: {newsTime}, {title}, {url}', level=3)
+            data = [[keyword, title, self.Name, newsTime, url, '']]
+            data = pd.DataFrame(data, columns=self.columns)
+            self.data = self.data.append(data)
+        return nextPage
+
+
+class NewYorkTime(readKeyWordEng, NameList):
+    def __init__(self, whichday):
+        self.Name = '美國紐約時報'
+        self.whichday = whichday
+        super(readKeyWordEng,   self).__init__()
+        super(NewYorkTime   ,   self).__init__()
+
+        self._URL()
+        self._processDate()
+        self._getKeywordNews()
+
+    def _URL(self):
+        self.website = 'https://www.nytimes.com/search?dropmab=true&endDate=TE&query=KEYWORD&sort=newest&startDate=TS'
+
+    def _processDate(self):
+        self.whichday = pd.to_datetime(self.whichday)
+        self.yyyymmdd = self.whichday.strftime('%Y%m%d')
+
+    def _getKeywordNews(self):
+        show(f'<<< {self.Name}新聞搜尋 >>>', level=4, sign='', nlb=True)
+        show('------------------------------------------------------', level=1, sign='')
+        self.data = pd.DataFrame(columns = self.columns)
+        for keyword in self.keywords[:]:
+            for page in range(1, 2):
+                website = copy.deepcopy(self.website)
+                website = website.replace('KEYWORD', keyword  )
+                website = website.replace('TS'     , self.yyyymmdd  )
+                website = website.replace('TE'     , self.yyyymmdd  )
+                show('------------------------------------------------------', level=1, sign='')
+                show(f'搜尋關鍵字:"{keyword}"; 網址:"{website}"', level=1)
+                try:
+                    self._getInfo(website)
+                except:
+                    show('**** something wrong!! Restart it!! ****', level=1)
+                    break
+                nextPage = self._getKeywordNews_sub(keyword)
+                nextPage = False
+                if not nextPage:
+                    break
+
+        data = self.data.reset_index().drop('index', axis=1)
+        self.website = website
+        self.data = data
+
+        show('檔案輸出', level=1)
+        Time = self.whichday.strftime('%Y-%m-%d')
+        nameByNewsDate = self.nameByNewsDate[self.Name].replace('TIME', Time)
+        self.fileNameTrue = nameByNewsDate
+        self.data.to_excel(nameByNewsDate, index=False)
+
+    def _getInfo(self, website):
+        wait()
+        html = requests.get(website, headers=headers)
+        html = BeautifulSoup(html.text, features='lxml')
+        self.html = html
+
+    def _getKeywordNews_sub(self, keyword):
+        newsBox = self.html.find_all('ol', {'data-testid':'search-results'})
+        if len(newsBox) != 1:
+            show('get more than 1 element. Please confirm.')
+            return
+        self.newsBox = newsBox
+        self.newsList = newsList = newsBox[0].find_all('li', {'class': 'css-1l4w6pd'})
+
+        nextPage = True
+        for inews in newsList[:]:
+            # 僅挑選當日的新聞，如果第一篇不是，後面就都是更早的新聞。
+            Time  = self.whichday 
+            newsTime = Time 
+            if newsTime.date() < self.whichday.date():
+                show(f'''<<< {self.whichday.strftime('%Y/%m/%d')} 沒有更多 "{keyword}" 相關的新聞 !!! >>>''', level=2, sign='')
+                nextPage = False
+                break
+            title = inews.find('h4').text
+
+            url = inews.find('a')['href']
+            url = 'https://www.nytimes.com' + url if url[0]=='/' else url
+            show(f'找到關鍵字 "{keyword}"; 文章資訊: {newsTime}, {title}, {url}', level=3)
+            data = [[keyword, title, 'NYTimes', newsTime, url, '']]
+            data = pd.DataFrame(data, columns=self.columns)
+            self.data = self.data.append(data)
+        return nextPage
+
+class European_Commission(NameList):
+    def __init__(self, whichday):
+        self.Name = 'European_Commission'
+        super(European_Commission, self).__init__()
+        self.whichday = whichday   
+        self.run(whichday) 
+
+    def run(self, whichday):
+        url = 'https://webgate.ec.europa.eu/rasff-window/portal/?event=notificationsList&StartRow=%s'
+
+        data = pd.read_html(requests.get(url).text)[0]
+        data = data.rename({'Unnamed: 0': '#'}, axis=1)
+        data = data.drop('Unnamed: 9', axis=1)
+        data = data.set_index('#')
+        data.index = data.index.astype(int)
+        data['Date of case'] = pd.to_datetime(data['Date of case'], format='%d/%m/%Y')
+        self.data = data
+
+        show('檔案輸出', level=1)
+        Time = self.whichday
+        nameByNewsDate = self.nameByNewsDate[self.Name].replace('TIME', Time)
+        self.fileNameTrue = nameByNewsDate
+        self.data.to_excel(nameByNewsDate, index=False)
+
+class fda(NameList):
+    def __init__(self, whichday):
+        self.Name = 'US_FDA'
+        super(fda, self).__init__()
+        self.whichday = whichday
+        self.run()
+
+    def run(self):
+        url = 'https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts'
+
+        headers = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3429.49 Safari/537.36'
+        profile = webdriver.FirefoxProfile()
+        profile.set_preference("general.useragent.override", headers)
+        driver = webdriver.Firefox(profile, executable_path='./geckodriver')
+        driver.get(url) #前往這個網址
+        time.sleep(5)
+        table = driver.find_element_by_css_selector('div#DataTables_Table_0_wrapper').get_attribute('innerHTML')
+        data = pd.read_html(table)[0]
+    
+        self.data = data 
+        self.driver = driver
+
+        show('檔案輸出', level=1)
+        nameByNewsDate = self.nameByNewsDate[self.Name].replace('TIME', whichday)
+        self.fileNameTrue = nameByNewsDate
+        self.data.to_excel(nameByNewsDate, index=False)
+
+if __name__ == '__main__':
+    whichday = '2020-08-03'
+    # datetime.date
+    #whichday = datetime.date.today().strftime('%Y-%m-%d')
+
+    L = ChinaTimes(whichday)
+    d = downloadNewsText('中國時報電子報', whichday)
+
+    L = Agriharvest(whichday)
+    d = downloadNewsText('農傳媒', whichday)
+
+    L = LibertyTimesNet(whichday)
+    d = downloadNewsText('自由時報電子報', whichday)
+
+    L = UDN(whichday)
+    d = downloadNewsText('聯合新聞網', whichday)
+
+    #L = AppleDaily(whichday)
+    #d = downloadNewsText('蘋果日報', whichday)
+
+    #C = CNA(whichday)
+    #d = downloadNewsText('中央通訊社', whichday)
+
+    #n = NewYorkTime(whichday)
+    #d = downloadNewsText('美國紐約時報', whichday)
+
+    #e = European_Commission(whichday)
+    #f = fda(whichday)

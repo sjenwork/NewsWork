@@ -1,0 +1,5 @@
+getNews.py:311: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 311 of the file getNews.py. To get rid of this warning, pass the additional argument 'features="lxml"' to the BeautifulSoup constructor.
+
+  newsBox = BeautifulSoup(self.driver.find_element(By.CSS_SELECTOR, 'div.search-classic').get_attribute('innerHTML'))

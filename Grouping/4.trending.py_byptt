@@ -1,0 +1,95 @@
+#!/Users/jen/miniconda3/envs/work/bin/python
+import pandas as pd
+from conn_sql import connectDB
+import datetime
+import re
+import shutil
+import numpy as np
+import sys
+import more_itertools
+import requests
+from bs4 import BeautifulSoup
+
+
+pd.set_option('display.unicode.east_asian_width',True)
+pd.set_option('display.unicode.ambiguous_as_wide',True)
+
+def connPtt(boardname, page=''):
+    payload = {  'from': f'https://www.ptt.cc/bbs/{boardname}/index{page}.html',#Gossiping
+                 'yes': 'yes' }
+    headers = { 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36' }
+    rs = requests.Session()
+    rs.post('https://www.ptt.cc/ask/over18', data=payload, headers=headers)
+    res = rs.get(f'{payload["from"]}', headers=headers)
+    if page != '':
+        print(f' >> 搜尋網址: {payload["from"]}')
+    if res.status_code != 200:
+        print('連線異常')
+        return None
+    return res.text
+
+
+class ptt():
+    def __init__(self, date, keyword):
+        #self.page = self.getPage()
+        #self.getArticle(35739, date)
+        self.getArticle(35810, date)
+        #self.getArticle(self.page, date)
+
+    def getPage(self):
+        html = BeautifulSoup(connPtt('Gossiping'), 'html.parser')
+        url = html.find('a',string='‹ 上頁')['href']
+        page = int(re.findall('.*index([\d]+).html', url)[0])+1
+        return page 
+
+    def getArticle(self, page, date):
+        res = []
+        for ipage in range(page+1)[:][::-1]:
+            html = BeautifulSoup(connPtt('Gossiping', ipage), 'html.parser')
+            artlist = html.find_all('div' ,{'class':'r-ent'})
+            art0date = artlist[0].find('div', {'class':'date'}).text
+            if art0date > pd.to_datetime(date).strftime('%_m/%d') :
+                print(f'   >> 此頁文章最早的日期為{art0date}，往前頁繼續搜尋')
+                continue
+            elif art0date < pd.to_datetime(date).strftime('%_m/%d') :
+                print(f'   >> 此頁文章最早的日期為{art0date}，超出搜尋日期範圍')
+                break
+            title = [i.find('div', {'class': 'title'}).text.strip() for i in artlist] 
+            time = [i.find('div', {'class': 'date' }).text.strip() for i in artlist] 
+            push = [i.select_one('div.nrec > span').text if i.select_one('div.nrec > span') is not None else '0' for i in artlist]
+
+            res.append(pd.DataFrame(list(zip(title, time, push)), columns=['title', 'date', 'push']))
+            
+                
+        res = pd.concat(res[::-1], axis=0).reset_index(drop=True)
+        res.title = res.title.str.replace('Re: ','')
+        res.push = res.push.str.replace('^X\d{0,}$', '100')
+        res.push = res.push.str.replace('爆', '1000')
+        res.push = res.push.astype(int)
+        res1 = res.pivot_table(index='title', aggfunc='count')[['date']]#.sort_values(by='date', ascending=False)
+        res2 = res.pivot_table(index='title', values='push', aggfunc='sum')#.sort_values(by='push', ascending=False)
+        res3 = pd.concat([res1, res2], axis=1)
+
+
+        self.artlist = artlist  
+        self.res = res
+        self.res1 = res1
+        self.res2 = res2
+        self.res3 = res3
+    
+
+
+
+if __name__ == '__main__':
+    #time = sys.argv[1]
+    time = '2020-09-30'
+    df = pd.read_excel(f'daily_news/{time}.xlsx')['Chemical_material'].dropna()
+    df = df.apply(lambda i: i.split('、'))
+    chem = list(set(more_itertools.flatten(list(df))))
+
+    df_chem = pd.DataFrame(columns=['update_date', 'chemiName'])
+    df_chem['chemiName'] = chem
+
+    for ii, row in df_chem.iterrows(): 
+        name = row['chemiName']
+    p = ptt(time, name)

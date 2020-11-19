@@ -1,0 +1,6 @@
+     -----> 國際新聞爬蟲：歐洲聯盟委員會
+    網址：https://webgate.ec.europa.eu/rasff-window/portal/?event=notificationsList&StartRow=%s
+完成，擷取資料如下
+Empty DataFrame
+Columns: [keyword, title, website, publish_time, web_url, news_content]
+Index: []

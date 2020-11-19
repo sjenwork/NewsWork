@@ -1,0 +1,55 @@
+Traceback (most recent call last):
+  File "S:\TV\anaconda3\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "S:\TV\anaconda3\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "S:\TV\anaconda3\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 無法連線，因為目標電腦拒絕連線。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "S:\TV\anaconda3\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "S:\TV\anaconda3\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "S:\TV\anaconda3\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "S:\TV\anaconda3\lib\site-packages\urllib3\connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "S:\TV\anaconda3\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x03C3A150>: Failed to establish a new connection: [WinError 10061] 無法連線，因為目標電腦拒絕連線。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "S:\TV\anaconda3\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "S:\TV\anaconda3\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "S:\TV\anaconda3\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.inspection.gc.ca', port=443): Max retries exceeded with url: /about-cfia/newsroom/food-recall-warnings/eng/1299076382077/1299076493846 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x03C3A150>: Failed to establish a new connection: [WinError 10061] 無法連線，因為目標電腦拒絕連線。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "getEngNews.py", line 564, in <module>
+    r = run[newsName](whichday)
+  File "getEngNews.py", line 299, in __init__
+    self.run(seldate)
+  File "getEngNews.py", line 305, in run
+    html = requests.get(url)
+  File "S:\TV\anaconda3\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "S:\TV\anaconda3\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "S:\TV\anaconda3\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "S:\TV\anaconda3\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "S:\TV\anaconda3\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.inspection.gc.ca', port=443): Max retries exceeded with url: /about-cfia/newsroom/food-recall-warnings/eng/1299076382077/1299076493846 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x03C3A150>: Failed to establish a new connection: [WinError 10061] 無法連線，因為目標電腦拒絕連線。'))
