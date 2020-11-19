@@ -15,10 +15,10 @@ Push:
   2. analyzing number of disscussion by ptt and mail
   
   
---------------------------------------
+--
 Result:
 discussion trend
-<p>![image](https://github.com/sjenwork/NewsWork/blob/master/Image/Discussion_trend.png)</p>
+![image](https://github.com/sjenwork/NewsWork/blob/master/Image/Discussion_trend.png)
 
 
 
