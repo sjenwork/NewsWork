@@ -1,6 +1,0 @@
-     -----> 國際新聞爬蟲：愛爾蘭食品安全局
-    網址：https://www.fsai.ie/news_centre/food_alerts.html
-完成，擷取資料如下
-Empty DataFrame
-Columns: [keyword, title, website, publish_time, web_url, news_content]
-Index: []

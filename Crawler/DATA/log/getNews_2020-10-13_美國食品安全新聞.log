@@ -1,7 +1,0 @@
-     -----> 國際新聞爬蟲：美國食品安全新聞
-    網址：https://www.foodsafetynews.com/foodborne-illness-outbreaks/
-完成，擷取資料如下
-  keyword     ...      news_content
-0    None     ...              None
-
-[1 rows x 6 columns]
