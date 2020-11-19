@@ -18,7 +18,7 @@ Push:
 --------------------------------------
 Result:
 discussion trend
-![image](https://github.com/sjenwork/NewsWork/blob/master/Image/Discussion_trend.png)
+<p>![image](https://github.com/sjenwork/NewsWork/blob/master/Image/Discussion_trend.png)</p>
 
 
 
