@@ -1,6 +1,0 @@
-run.py 為主程式，以下為步驟說明:
-
-1. 從資料庫中擷取update_time為當日之新聞
-2. 將資料寫入待處理的路徑 DATA/pred_set.xlsx
-3. 預測完成後，將結果寫入 daily_prediction/當日日期.xlsx
-4. 尋找化學物質。
